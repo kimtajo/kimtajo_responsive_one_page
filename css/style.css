@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-pricing .price-box.popular .popular-text {
   top: 0;
   left: 50%;
-  margin-left: -54px;
+  /*margin-left: -54px;*/
   margin-top: -2em;
   position: absolute;
   padding: 4px 20px;
@@ -587,11 +587,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex;*/
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;

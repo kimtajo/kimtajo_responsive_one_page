@@ -1,5 +1,5 @@
+{Context::addHtmlHeader('<meta name="viewport" content="width=device-width, user-scalable=yes">')}
 <load target="css/bootstrap.css" />
-<load target="css/common.css" />
 <load target="css/animate.css" />
 <load target="css/icomoon.css" />
 <load target="css/simple-line-icons.css" />
@@ -16,7 +16,7 @@
 <load cond="$layout_info->use_color === 'lightblue'" target="css/lightblue.css" />
 <load cond="$layout_info->use_color === 'brown'" target="css/brown.css" />
 <load cond="$layout_info->use_color === 'green'" target="css/green.css" />
-
+<load target="css/common.css" />
 
 <load type="body" target="js/jquery.min.js" />
 <load type="body" target="js/jquery.easing.1.3.js" />
@@ -180,6 +180,195 @@
 </block>
 <!-- /.Section 2 -->
 
+<!-- Section 3 -->
+<block cond="$layout_info->use_section3 == 'Y'">
+	<!-- Navbar Title -->
+	<block cond="!$layout_info->section3_top_title">{@ $layout_info->section3_top_title = '섹션 3'}</block>
+	<!-- /.Navbar Title -->
+
+	<block cond="!$layout_info->section3_title">{@ $layout_info->section3_title = '섹션 3 제목'}</block>
+	<block cond="!$layout_info->section3_content">{@ $layout_info->section3_content = '섹션 3의 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section3_count">{@ $layout_info->section3_count = 6}</block>
+
+	<block cond="!$layout_info->section3_sub1_icon">{@ $layout_info->section3_sub1_icon = 'fa fa-book'}</block>
+	<block cond="!$layout_info->section3_sub1_title">{@ $layout_info->section3_sub1_title = '섹션 3 서브 1 제목'}</block>
+	<block cond="!$layout_info->section3_sub1_content">{@ $layout_info->section3_sub1_content = '섹션 3 서브 1 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section3_sub2_icon">{@ $layout_info->section3_sub2_icon = 'xi-sitemap'}</block>
+	<block cond="!$layout_info->section3_sub2_title">{@ $layout_info->section3_sub2_title = '섹션 3 서브 2 제목'}</block>
+	<block cond="!$layout_info->section3_sub2_content">{@ $layout_info->section3_sub2_content = '섹션 3 서브 2 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section3_sub3_icon">{@ $layout_info->section3_sub3_icon = 'fa fa-cloud'}</block>
+	<block cond="!$layout_info->section3_sub3_title">{@ $layout_info->section3_sub3_title = '섹션 3 서브 3 제목'}</block>
+	<block cond="!$layout_info->section3_sub3_content">{@ $layout_info->section3_sub3_content = '섹션 3 서브 3 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section3_sub4_icon">{@ $layout_info->section3_sub4_icon = 'fa fa-bolt'}</block>
+	<block cond="!$layout_info->section3_sub4_title">{@ $layout_info->section3_sub4_title = '섹션 3 서브 4 제목'}</block>
+	<block cond="!$layout_info->section3_sub4_content">{@ $layout_info->section3_sub4_content = '섹션 3 서브 4 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section3_sub5_icon">{@ $layout_info->section3_sub5_icon = 'xi-paper'}</block>
+	<block cond="!$layout_info->section3_sub5_title">{@ $layout_info->section3_sub5_title = '섹션 3 서브 5 제목'}</block>
+	<block cond="!$layout_info->section3_sub5_content">{@ $layout_info->section3_sub5_content = '섹션 3 서브 5 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section3_sub6_icon">{@ $layout_info->section3_sub6_icon = 'xi-magnet'}</block>
+	<block cond="!$layout_info->section3_sub6_title">{@ $layout_info->section3_sub6_title = '섹션 3 서브 6 제목'}</block>
+	<block cond="!$layout_info->section3_sub6_content">{@ $layout_info->section3_sub6_content = '섹션 3 서브 6 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->use_section3_button">{@ $layout_info->use_section3_button = 'Y'}</block>
+	<block cond="!$layout_info->section3_button_name">{@ $layout_info->section3_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section3_button_link">{@ $layout_info->section3_button_link = '#'}</block>
+</block>
+<!-- /.Section 3 -->
+
+<!-- Section 4 -->
+<block cond="$layout_info->use_section4 == 'Y'">
+	<!-- Navbar Title -->
+	<block cond="!$layout_info->section4_top_title">{@ $layout_info->section4_top_title = '섹션 4'}</block>
+	<!-- /.Navbar Title -->
+
+	<block cond="!$layout_info->section4_title">{@ $layout_info->section4_title = '섹션 4 제목'}</block>
+	<block cond="!$layout_info->section4_content">{@ $layout_info->section4_content = '섹션 4의 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section4_count">{@ $layout_info->section4_count = 6}</block>
+
+	<block cond="!$layout_info->section4_sub1_icon">{@ $layout_info->section4_sub1_icon = 'fa fa-quote-left'}</block>
+	<block cond="!$layout_info->section4_sub1_content">{@ $layout_info->section4_sub1_content = '섹션 4 서브 1 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section4_sub1_name">{@ $layout_info->section4_sub1_name = '섹션 4 서브 1 이름'}</block>
+	<block cond="!$layout_info->section4_sub1_info">{@ $layout_info->section4_sub1_info = '섹션 4 서브 1 정보'}</block>
+
+	<block cond="!$layout_info->section4_sub2_icon">{@ $layout_info->section4_sub2_icon = 'fa fa-quote-left'}</block>
+	<block cond="!$layout_info->section4_sub2_content">{@ $layout_info->section4_sub2_content = '섹션 4 서브 2 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section4_sub2_name">{@ $layout_info->section4_sub2_name = '섹션 4 서브 2 이름'}</block>
+	<block cond="!$layout_info->section4_sub2_info">{@ $layout_info->section4_sub2_info = '섹션 4 서브 2 정보'}</block>
+
+	<block cond="!$layout_info->section4_sub3_icon">{@ $layout_info->section4_sub3_icon = 'fa fa-quote-left'}</block>
+	<block cond="!$layout_info->section4_sub3_content">{@ $layout_info->section4_sub3_content = '섹션 4 서브 3 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section4_sub3_name">{@ $layout_info->section4_sub3_name = '섹션 4 서브 3 이름'}</block>
+	<block cond="!$layout_info->section4_sub3_info">{@ $layout_info->section4_sub3_info = '섹션 4 서브 3 정보'}</block>
+
+	<block cond="!$layout_info->section4_sub4_icon">{@ $layout_info->section4_sub4_icon = 'fa fa-quote-left'}</block>
+	<block cond="!$layout_info->section4_sub4_content">{@ $layout_info->section4_sub4_content = '섹션 4 서브 4 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section4_sub4_name">{@ $layout_info->section4_sub4_name = '섹션 4 서브 4 이름'}</block>
+	<block cond="!$layout_info->section4_sub4_info">{@ $layout_info->section4_sub4_info = '섹션 4 서브 4 정보'}</block>
+
+	<block cond="!$layout_info->section4_sub5_icon">{@ $layout_info->section4_sub5_icon = 'fa fa-quote-left'}</block>
+	<block cond="!$layout_info->section4_sub5_content">{@ $layout_info->section4_sub5_content = '섹션 4 서브 5 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section4_sub5_name">{@ $layout_info->section4_sub5_name = '섹션 4 서브 5 이름'}</block>
+	<block cond="!$layout_info->section4_sub5_info">{@ $layout_info->section4_sub5_info = '섹션 4 서브 5 정보'}</block>
+
+	<block cond="!$layout_info->section4_sub6_icon">{@ $layout_info->section4_sub6_icon = 'fa fa-quote-left'}</block>
+	<block cond="!$layout_info->section4_sub6_content">{@ $layout_info->section4_sub6_content = '섹션 4 서브 6 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section4_sub6_name">{@ $layout_info->section4_sub6_name = '섹션 4 서브 6 이름'}</block>
+	<block cond="!$layout_info->section4_sub6_info">{@ $layout_info->section4_sub6_info = '섹션 4 서브 6 정보'}</block>
+</block>
+<!-- /.Section 4 -->
+
+<!-- Section 5 -->
+<block cond="$layout_info->use_section5 == 'Y'">
+	<!-- Navbar Title -->
+	<block cond="!$layout_info->section5_top_title">{@ $layout_info->section5_top_title = '섹션 5'}</block>
+	<!-- /.Navbar Title -->
+
+	<block cond="!$layout_info->section5_title">{@ $layout_info->section5_title = '섹션 5 제목'}</block>
+	<block cond="!$layout_info->section5_content">{@ $layout_info->section5_content = '섹션 5의 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section5_count">{@ $layout_info->section5_count = 4}</block>
+	<block cond="!$layout_info->section5_grade1_popular">{@ $layout_info->section5_grade1_popular = 3}</block>
+	<block cond="!$layout_info->section5_popular_name">{@ $layout_info->section5_popular_name = '추천'}</block>
+
+	<block cond="!$layout_info->section5_grade1_name">{@ $layout_info->section5_grade1_name = '등급 1'}</block>
+	<block cond="!$layout_info->section5_grade1_money_type">{@ $layout_info->section5_grade1_money_type = 'fa fa-won'}</block>
+	<block cond="!$layout_info->section5_grade1_pay_type">{@ $layout_info->section5_grade1_pay_type = '월'}</block>
+	<block cond="!$layout_info->section5_grade1_money">{@ $layout_info->section5_grade1_money = '7000'}</block>
+	<block cond="!$layout_info->section5_grade1_description">{@ $layout_info->section5_grade1_description = '섹션 4 등급 1 설명'}</block>
+	<block cond="empty($layout_info->section5_grade1_detail)">
+		{@ $grade1_data = array('상세정보 1', '상세정보 2', '상세정보 3')}
+	</block>
+	<block cond="$layout_info->section5_grade1_detail">
+		{@ $grade1_data = explode("\n", $layout_info->section5_grade1_detail)}
+	</block>
+	<block cond="!$layout_info->section5_grade1_button_name">{@ $layout_info->section5_grade1_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section5_grade1_button_link">{@ $layout_info->section5_grade1_button_link = '#'}</block>
+
+	<block cond="!$layout_info->section5_grade2_name">{@ $layout_info->section5_grade2_name = '등급 2'}</block>
+	<block cond="!$layout_info->section5_grade2_money_type">{@ $layout_info->section5_grade2_money_type = 'fa fa-won'}</block>
+	<block cond="!$layout_info->section5_grade2_pay_type">{@ $layout_info->section5_grade2_pay_type = '월'}</block>
+	<block cond="!$layout_info->section5_grade2_money">{@ $layout_info->section5_grade2_money = '7000'}</block>
+	<block cond="!$layout_info->section5_grade2_description">{@ $layout_info->section5_grade2_description = '섹션 4 등급 2 설명'}</block>
+	<block cond="empty($layout_info->section5_grade2_detail)">
+		{@ $grade2_data = array('상세정보 1', '상세정보 2', '상세정보 3')}
+	</block>
+	<block cond="$layout_info->section5_grade2_detail">
+		{@ $grade2_data = explode("\n", $layout_info->section5_grade2_detail)}
+	</block>
+	<block cond="!$layout_info->section5_grade2_button_name">{@ $layout_info->section5_grade2_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section5_grade2_button_link">{@ $layout_info->section5_grade2_button_link = '#'}</block>
+
+	<block cond="!$layout_info->section5_grade3_name">{@ $layout_info->section5_grade3_name = '등급 3'}</block>
+	<block cond="!$layout_info->section5_grade3_money_type">{@ $layout_info->section5_grade3_money_type = 'fa fa-won'}</block>
+	<block cond="!$layout_info->section5_grade3_pay_type">{@ $layout_info->section5_grade3_pay_type = '월'}</block>
+	<block cond="!$layout_info->section5_grade3_money">{@ $layout_info->section5_grade3_money = '7000'}</block>
+	<block cond="!$layout_info->section5_grade3_description">{@ $layout_info->section5_grade3_description = '섹션 4 등급 3 설명'}</block>
+	<block cond="empty($layout_info->section5_grade3_detail)">
+		{@ $grade3_data = array('상세정보 1', '상세정보 2', '상세정보 3')}
+	</block>
+	<block cond="$layout_info->section5_grade3_detail">
+		{@ $grade3_data = explode("\n", $layout_info->section5_grade3_detail)}
+	</block>
+	<block cond="!$layout_info->section5_grade3_button_name">{@ $layout_info->section5_grade3_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section5_grade3_button_link">{@ $layout_info->section5_grade3_button_link = '#'}</block>
+
+	<block cond="!$layout_info->section5_grade4_name">{@ $layout_info->section5_grade4_name = '등급 4'}</block>
+	<block cond="!$layout_info->section5_grade4_money_type">{@ $layout_info->section5_grade4_money_type = 'fa fa-won'}</block>
+	<block cond="!$layout_info->section5_grade4_pay_type">{@ $layout_info->section5_grade4_pay_type = '월'}</block>
+	<block cond="!$layout_info->section5_grade4_money">{@ $layout_info->section5_grade4_money = '7000'}</block>
+	<block cond="!$layout_info->section5_grade4_description">{@ $layout_info->section5_grade4_description = '섹션 4 등급 4 설명'}</block>
+	<block cond="empty($layout_info->section5_grade4_detail)">
+		{@ $grade4_data = array('상세정보 1', '상세정보 2', '상세정보 3')}
+	</block>
+	<block cond="$layout_info->section5_grade4_detail">
+		{@ $grade4_data = explode("\n", $layout_info->section5_grade4_detail)}
+	</block>
+	<block cond="!$layout_info->section5_grade4_button_name">{@ $layout_info->section5_grade4_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section5_grade4_button_link">{@ $layout_info->section5_grade4_button_link = '#'}</block>
+</block>
+<!-- /.Section 4 -->
+
+<!-- Section 6(보류) -->
+<block cond="$layout_info->use_section6 == 'Y'">
+	<!-- Navbar Title -->
+	<block cond="!$layout_info->section6_top_title">{@ $layout_info->section6_top_title = '섹션 6'}</block>
+	<!-- /.Navbar Title -->
+
+	<block cond="!$layout_info->section6_count">{@ $layout_info->section6_count = 4}</block>
+
+
+	<block cond="!$layout_info->section6_sub1_title">{@ $layout_info->section6_sub1_title = '섹션 6 서브 1'}</block>
+	<block cond="!$layout_info->section6_sub1_text">{@ $layout_info->section6_sub1_text = '섹션 6 서브 1의 내용을 길게길게 입력합니다.'}</block>
+	<block cond="!$layout_info->use_section6_sub1_button">{@ $layout_info->use_section6_sub1_button = 'Y'}</block>
+	<block cond="!$layout_info->section6_sub1_button_name">{@ $layout_info->section6_sub1_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section6_sub1_button_link">{@ $layout_info->section6_sub1_button_link = '#'}</block>
+
+	<block cond="!$layout_info->section6_sub2_title">{@ $layout_info->section6_sub2_title = '섹션 6 서브 2'}</block>
+	<block cond="!$layout_info->section6_sub2_text">{@ $layout_info->section6_sub2_text = '섹션 6 서브 2의 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->use_section6_sub2_button">{@ $layout_info->use_section6_sub2_button = 'Y'}</block>
+	<block cond="!$layout_info->section6_sub2_button_name">{@ $layout_info->section6_sub2_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section6_sub2_button_link">{@ $layout_info->section6_sub2_button_link = '#'}</block>
+
+	<block cond="!$layout_info->section6_sub3_title">{@ $layout_info->section6_sub3_title = '섹션 6 서브 3'}</block>
+	<block cond="!$layout_info->section6_sub3_text">{@ $layout_info->section6_sub3_text = '섹션 6 서브 3의 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->use_section6_sub3_button">{@ $layout_info->use_section6_sub3_button = 'Y'}</block>
+	<block cond="!$layout_info->section6_sub3_button_name">{@ $layout_info->section6_sub3_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section6_sub3_button_link">{@ $layout_info->section6_sub3_button_link = '#'}</block>
+
+	<block cond="!$layout_info->section6_sub4_title">{@ $layout_info->section6_sub4_title = '섹션 6 서브 4'}</block>
+	<block cond="!$layout_info->section6_sub4_text">{@ $layout_info->section6_sub4_text = '섹션 6 서브 4의 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->use_section6_sub4_button">{@ $layout_info->use_section6_sub4_button = 'Y'}</block>
+	<block cond="!$layout_info->section6_sub4_button_name">{@ $layout_info->section6_sub4_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section6_sub4_button_link">{@ $layout_info->section6_sub4_button_link = '#'}</block>
+
+
+
+</block>
+<!-- /.Section 6 -->
 
 <!-- 포인트 색상(지정) -->
 <block cond="$layout_info->use_color === 'custom'">
@@ -224,8 +413,8 @@
 					<!--@if(!$layout_info->transparent_logo_image)-->
 					<img src="{$layout_info->logo_image}" alt="{$layout_info->logo_text}" />
 					<!--@else-->
-					<img id="transparent_logo_image" src="{$layout_info->transparent_logo_image}" alt="{$layout_info->logo_text}" />
-					<img id="logo_image" src="{$layout_info->logo_image}" alt="{$layout_info->logo_text}" class="hidden" />
+					<img id="transparent_logo_image" src="{$layout_info->transparent_logo_image}" alt="{$layout_info->logo_text}" class="fh5co-transparent-logo-image" />
+					<img id="logo_image" src="{$layout_info->logo_image}" alt="{$layout_info->logo_text}" class="hidden fh5co-logo-image" />
 					<!--@end-->
 				</a>
 				<!--@end-->
@@ -235,10 +424,10 @@
 					<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
 					<li cond="$layout_info->use_section1 === 'Y'"><a href="#" data-nav-section="section1"><span>{$layout_info->section1_top_title}</span></a></li>
 					<li cond="$layout_info->use_section2 === 'Y'"><a href="#" data-nav-section="section2"><span>{$layout_info->section2_top_title}</span></a></li>
-					<li cond="$layout_info->use_section3 === 'Y'"><a href="#" data-nav-section="section3"><span>기능</span></a></li>
-					<li cond="$layout_info->use_section4 === 'Y'"><a href="#" data-nav-section="section4"><span>리뷰</span></a></li>
-					<li cond="$layout_info->use_section5 === 'Y'"><a href="#" data-nav-section="section5"><span>비용</span></a></li>
-					<li cond="$layout_info->use_section6 === 'Y'"><a href="#" data-nav-section="section6"><span>Contact</span></a></li>
+					<li cond="$layout_info->use_section3 === 'Y'"><a href="#" data-nav-section="section3"><span>{$layout_info->section3_top_title}</span></a></li>
+					<li cond="$layout_info->use_section4 === 'Y'"><a href="#" data-nav-section="section4"><span>{$layout_info->section4_top_title}</span></a></li>
+					<li cond="$layout_info->use_section5 === 'Y'"><a href="#" data-nav-section="section5"><span>{$layout_info->section5_top_title}</span></a></li>
+					<li cond="$layout_info->use_section6 === 'Y'"><a href="#" data-nav-section="section6"><span>{$layout_info->section6_top_title}</span></a></li>
 
 					<!-- 로그인 메뉴 -->
 					<li>
@@ -935,64 +1124,108 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2 class="single-animate animate-features-1">Features</h2>
+				<h2 class="single-animate animate-features-1">{$layout_info->section3_title}</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
-						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+						<h3>{nl2br($layout_info->section3_content)}</h3>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="row row-bottom-padded-sm">
+			<!--@if($layout_info->section3_count == 6)-->
 			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="icon-present"></i></div>
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub1_icon}"></i></div>
 				<div class="fh5co-desc">
-					<h3>100% Free</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					<h3>{$layout_info->section3_sub1_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub1_content)}
+					</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="icon-eye"></i></div>
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub2_icon}"></i></div>
 				<div class="fh5co-desc">
-					<h3>Retina Ready</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-				</div>
-			</div>
-			<div class="clearfix visible-sm-block visible-xs-block"></div>
-			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="icon-crop"></i></div>
-				<div class="fh5co-desc">
-					<h3>Fully Responsive</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="icon-speedometer"></i></div>
-				<div class="fh5co-desc">
-					<h3>Lightweight</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					<h3>{$layout_info->section3_sub2_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub2_content)}
+					</p>
 				</div>
 			</div>
 			<div class="clearfix visible-sm-block visible-xs-block"></div>
 			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="icon-heart"></i></div>
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub3_icon}"></i></div>
 				<div class="fh5co-desc">
-					<h3>Made with Love</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					<h3>{$layout_info->section3_sub3_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub3_content)}
+					</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="icon-umbrella"></i></div>
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub4_icon}"></i></div>
 				<div class="fh5co-desc">
-					<h3>Eco Friendly</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					<h3>{$layout_info->section3_sub4_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub4_content)}
+					</p>
 				</div>
 			</div>
 			<div class="clearfix visible-sm-block visible-xs-block"></div>
+			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub5_icon}"></i></div>
+				<div class="fh5co-desc">
+					<h3>{$layout_info->section3_sub5_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub5_content)}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub6_icon}"></i></div>
+				<div class="fh5co-desc">
+					<h3>{$layout_info->section3_sub6_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub6_content)}
+					</p>
+				</div>
+			</div>
+			<div class="clearfix visible-sm-block visible-xs-block"></div>
+			<!--@else-->
+			<div class="col-md-4 col-sm-4 col-xs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub1_icon}"></i></div>
+				<div class="fh5co-desc">
+					<h3>{$layout_info->section3_sub1_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub1_content)}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub2_icon}"></i></div>
+				<div class="fh5co-desc">
+					<h3>{$layout_info->section3_sub2_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub2_content)}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="{$layout_info->section3_sub3_icon}"></i></div>
+				<div class="fh5co-desc">
+					<h3>{$layout_info->section3_sub3_title}</h3>
+					<p>
+						{nl2br($layout_info->section3_sub3_content)}
+					</p>
+				</div>
+			</div>
+			<!--@end-->
 		</div>
-		<div class="row">
+
+		<div cond="$layout_info->use_section3_button" class="row">
 			<div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
-				<a href="#" class="btn btn-primary btn-block">Learn More</a>
+				<a href="{$layout_info->section3_button_link}" class="btn btn-primary btn-block">{$layout_info->section3_button_name}</a>
 			</div>
 		</div>
 	</div>
@@ -1001,10 +1234,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2 class="to-animate">Happy Clients Says...</h2>
+				<h2 class="to-animate">{$layout_info->section4_top_title}</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+						<h3>{$layout_info->section4_content}</h3>
 					</div>
 				</div>
 			</div>
@@ -1013,33 +1246,74 @@
 			<div class="col-md-4">
 				<div class="box-testimony to-animate">
 					<blockquote>
-						<span class="quote"><span><i class="icon-quote-left"></i></span></span>
-						<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						<span class="quote"><span><i class="{$layout_info->section4_sub1_icon}"></i></span></span>
+						<p>&ldquo;{nl2br($layout_info->section4_sub1_content)}&rdquo;</p>
 					</blockquote>
-					<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					<p class="author">
+						{$layout_info->section4_sub1_name}
+						<span class="subtext">{$layout_info->section4_sub1_info}</span>
+					</p>
 				</div>
-
+				<!--@if($layout_info->section4_count == 6)-->
+				<div class="box-testimony to-animate">
+					<blockquote>
+						<span class="quote"><span><i class="{$layout_info->section4_sub4_icon}"></i></span></span>
+						<p>&ldquo;{nl2br($layout_info->section4_sub4_content)}&rdquo;</p>
+					</blockquote>
+					<p class="author">
+						{$layout_info->section4_sub4_name}
+						<span class="subtext">{$layout_info->section4_sub4_info}</span>
+					</p>
+				</div>
+				<!--@end-->
 			</div>
 			<div class="col-md-4">
 				<div class="box-testimony to-animate">
 					<blockquote>
-						<span class="quote"><span><i class="icon-quote-left"></i></span></span>
-						<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
+						<span class="quote"><span><i class="{$layout_info->section4_sub2_icon}"></i></span></span>
+						<p>&ldquo;{nl2br($layout_info->section4_sub2_content)}&rdquo;</p>
 					</blockquote>
-					<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					<p class="author">
+						{$layout_info->section4_sub2_name}
+						<span class="subtext">{$layout_info->section4_sub2_info}</span>
+					</p>
 				</div>
-
-
+				<!--@if($layout_info->section4_count == 6)-->
+				<div class="box-testimony to-animate">
+					<blockquote>
+						<span class="quote"><span><i class="{$layout_info->section4_sub5_icon}"></i></span></span>
+						<p>&ldquo;{nl2br($layout_info->section4_sub5_content)}&rdquo;</p>
+					</blockquote>
+					<p class="author">
+						{$layout_info->section4_sub5_name}
+						<span class="subtext">{$layout_info->section4_sub5_info}</span>
+					</p>
+				</div>
+				<!--@end-->
 			</div>
 			<div class="col-md-4">
 				<div class="box-testimony to-animate">
 					<blockquote>
-						<span class="quote"><span><i class="icon-quote-left"></i></span></span>
-						<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						<span class="quote"><span><i class="{$layout_info->section4_sub3_icon}"></i></span></span>
+						<p>&ldquo;{nl2br($layout_info->section4_sub3_content)}&rdquo;</p>
 					</blockquote>
-					<p class="author">John Doe, Founder <a href="#">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					<p class="author">
+						{$layout_info->section4_sub3_name}
+						<span class="subtext">{$layout_info->section4_sub3_info}</span>
+					</p>
 				</div>
-
+				<!--@if($layout_info->section4_count == 6)-->
+				<div class="box-testimony to-animate">
+					<blockquote>
+						<span class="quote"><span><i class="{$layout_info->section4_sub6_icon}"></i></span></span>
+						<p>&ldquo;{nl2br($layout_info->section4_sub6_content)}&rdquo;</p>
+					</blockquote>
+					<p class="author">
+						{$layout_info->section4_sub6_name}
+						<span class="subtext">{$layout_info->section4_sub6_info}</span>
+					</p>
+				</div>
+				<!--@end-->
 			</div>
 		</div>
 	</div>
@@ -1048,81 +1322,143 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2 class="single-animate animate-pricing-1">Pricing</h2>
+				<h2 class="single-animate animate-pricing-1">{$layout_info->section5_title}</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
-						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+						<h3>
+							{nl2br($layout_info->section5_content)}
+						</h3>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
+			<!--@if($layout_info->section5_count == 4)-->
 			<div class="col-md-3 col-sm-6">
-				<div class="price-box to-animate">
-					<h2 class="pricing-plan">Starter</h2>
-					<div class="price"><sup class="currency">$</sup>7<small>/mo</small></div>
-					<p>Basic customer support for small business</p>
+				<div id="grade1" class="price-box to-animate">
+					<div class="popular-text" cond="$layout_info->section5_grade1_popular == 1">{$layout_info->section5_popular_name}</div>
+					<h2 class="pricing-plan">{$layout_info->section5_grade1_name}</h2>
+					<div class="price">
+						<sup class="currency"><i class="{$layout_info->section5_grade1_money_type}"></i> </sup>{number_format($layout_info->section5_grade1_money)}<small>/{$layout_info->section5_grade1_pay_type}</small>
+					</div>
+					<p>{$layout_info->section5_grade1_description}</p>
 					<hr>
 					<ul class="pricing-info">
-						<li>10 projects</li>
-						<li>20 Pages</li>
-						<li>20 Emails</li>
-						<li>100 Images</li>
+						<!--@foreach($grade1_data as $data)-->
+						<li>{$data}</li>
+						<!--@end-->
 					</ul>
-					<a href="#" class="btn btn-default btn-sm">Get started</a>
+					<a href="{$layout_info->section5_grade1_button_link}" class="btn btn-default btn-sm">{$layout_info->section5_grade1_button_name}</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
-				<div class="price-box to-animate">
-					<h2 class="pricing-plan">Regular</h2>
-					<div class="price"><sup class="currency">$</sup>19<small>/mo</small></div>
-					<p>Basic customer support for small business</p>
+				<div id="grade2" class="price-box to-animate">
+					<div class="popular-text" cond="$layout_info->section5_grade2_popular == 1">{$layout_info->section5_popular_name}</div>
+					<h2 class="pricing-plan">{$layout_info->section5_grade2_name}</h2>
+					<div class="price">
+						<sup class="currency"><i class="{$layout_info->section5_grade2_money_type}"></i> </sup>{number_format($layout_info->section5_grade2_money)}<small>/{$layout_info->section5_grade2_pay_type}</small>
+					</div>
+					<p>{$layout_info->section5_grade2_description}</p>
 					<hr>
 					<ul class="pricing-info">
-						<li>15 projects</li>
-						<li>40 Pages</li>
-						<li>40 Emails</li>
-						<li>200 Images</li>
+						<!--@foreach($grade2_data as $data)-->
+						<li>{$data}</li>
+						<!--@end-->
 					</ul>
-					<a href="#" class="btn btn-default btn-sm">Get started</a>
+					<a href="{$layout_info->section5_grade3_button_link}" class="btn btn-default btn-sm">{$layout_info->section5_grade3_button_name}</a>
 				</div>
 			</div>
-			<div class="clearfix visible-sm-block"></div>
 			<div class="col-md-3 col-sm-6 to-animate">
-				<div class="price-box popular">
-					<div class="popular-text">Best value</div>
-					<h2 class="pricing-plan">Plus</h2>
-					<div class="price"><sup class="currency">$</sup>79<small>/mo</small></div>
-					<p>Basic customer support for small business</p>
+				<div id="grade3" class="price-box">
+					<div class="popular-text" cond="$layout_info->section5_grade3_popular == 1">{$layout_info->section5_popular_name}</div>
+					<h2 class="pricing-plan">{$layout_info->section5_grade3_name}</h2>
+					<div class="price">
+						<sup class="currency"><i class="{$layout_info->section5_grade3_money_type}"></i> </sup>{number_format($layout_info->section5_grade3_money)}<small>/{$layout_info->section5_grade3_pay_type}</small>
+					</div>
+					<p>{$layout_info->section5_grade3_description}</p>
 					<hr>
 					<ul class="pricing-info">
-						<li>Unlimitted projects</li>
-						<li>100 Pages</li>
-						<li>100 Emails</li>
-						<li>700 Images</li>
+						<!--@foreach($grade3_data as $data)-->
+						<li>{$data}</li>
+						<!--@end-->
 					</ul>
-					<a href="#" class="btn btn-primary btn-sm">Get started</a>
+					<a href="{$layout_info->section5_grade4_button_link}" class="btn btn-default btn-sm">{$layout_info->section5_grade4_button_name}</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
-				<div class="price-box to-animate">
-					<h2 class="pricing-plan">Enterprise</h2>
-					<div class="price"><sup class="currency">$</sup>125<small>/mo</small></div>
-					<p>Basic customer support for small business</p>
+				<div id="grade4" class="price-box to-animate">
+					<div class="popular-text" cond="$layout_info->section5_grade4_popular == 1">{$layout_info->section5_popular_name}</div>
+					<h2 class="pricing-plan">{$layout_info->section5_grade4_name}</h2>
+					<div class="price">
+						<sup class="currency"><i class="{$layout_info->section5_grade4_money_type}"></i> </sup>{number_format($layout_info->section5_grade4_money)}<small>/{$layout_info->section5_grade4_pay_type}</small>
+					</div>
+					<p>{$layout_info->section5_grade4_description}</p>
 					<hr>
 					<ul class="pricing-info">
-						<li>Unlimitted projects</li>
-						<li>Unlimitted Pages</li>
-						<li>Unlimitted Emails</li>
-						<li>Unlimitted Images</li>
+						<!--@foreach($grade4_data as $data)-->
+						<li>{$data}</li>
+						<!--@end-->
 					</ul>
-					<a href="#" class="btn btn-default btn-sm">Get started</a>
+					<a href="{$layout_info->section5_grade4_button_link}" class="btn btn-default btn-sm">{$layout_info->section5_grade4_button_name}</a>
 				</div>
 			</div>
-
+			<!--@else-->
+			<div class="col-md-4 col-sm-12">
+				<div id="grade1" class="price-box to-animate">
+					<div class="popular-text" cond="$layout_info->section5_grade1_popular == 1">{$layout_info->section5_popular_name}</div>
+					<h2 class="pricing-plan">{$layout_info->section5_grade1_name}</h2>
+					<div class="price">
+						<sup class="currency"><i class="{$layout_info->section5_grade1_money_type}"></i> </sup>{number_format($layout_info->section5_grade1_money)}<small>/{$layout_info->section5_grade1_pay_type}</small>
+					</div>
+					<p>{$layout_info->section5_grade1_description}</p>
+					<hr>
+					<ul class="pricing-info">
+						<!--@foreach($grade1_data as $data)-->
+						<li>{$data}</li>
+						<!--@end-->
+					</ul>
+					<a href="{$layout_info->section5_grade1_button_link}" class="btn btn-default btn-sm">{$layout_info->section5_grade1_button_name}</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div id="grade2" class="price-box to-animate">
+					<div class="popular-text" cond="$layout_info->section5_grade2_popular == 1">{$layout_info->section5_popular_name}</div>
+					<h2 class="pricing-plan">{$layout_info->section5_grade2_name}</h2>
+					<div class="price">
+						<sup class="currency"><i class="{$layout_info->section5_grade2_money_type}"></i> </sup>{number_format($layout_info->section5_grade2_money)}<small>/{$layout_info->section5_grade2_pay_type}</small>
+					</div>
+					<p>{$layout_info->section5_grade2_description}</p>
+					<hr>
+					<ul class="pricing-info">
+						<!--@foreach($grade2_data as $data)-->
+						<li>{$data}</li>
+						<!--@end-->
+					</ul>
+					<a href="{$layout_info->section5_grade3_button_link}" class="btn btn-default btn-sm">{$layout_info->section5_grade3_button_name}</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 to-animate">
+				<div id="grade3" class="price-box">
+					<div class="popular-text" cond="$layout_info->section5_grade3_popular == 1">{$layout_info->section5_popular_name}</div>
+					<h2 class="pricing-plan">{$layout_info->section5_grade3_name}</h2>
+					<div class="price">
+						<sup class="currency"><i class="{$layout_info->section5_grade3_money_type}"></i> </sup>{number_format($layout_info->section5_grade3_money)}<small>/{$layout_info->section5_grade3_pay_type}</small>
+					</div>
+					<p>{$layout_info->section5_grade3_description}</p>
+					<hr>
+					<ul class="pricing-info">
+						<!--@foreach($grade3_data as $data)-->
+						<li>{$data}</li>
+						<!--@end-->
+					</ul>
+					<a href="{$layout_info->section5_grade4_button_link}" class="btn btn-default btn-sm">{$layout_info->section5_grade4_button_name}</a>
+				</div>
+			</div>
+			<!--@end-->
 		</div>
 	</div>
 </div>
+<!-- 보류
 <div cond="$layout_info->use_section6 === 'Y'" id="fh5co-press" data-section="section6">
 	<div class="container">
 		<div class="row">
@@ -1137,21 +1473,25 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<!-- Press Item -->
+				<!-- Press Item --
 				<div class="fh5co-press-item to-animate">
-					<div class="fh5co-press-img" style="background-image: url(images/img_7.jpg)">
-					</div>
+					<div cond="!$layout_info->section6_sub1_image" class="fh5co-press-img" style="background-image: url({$layout_info->path}/images/img_8.jpg)" ></div>
+					<div cond="$layout_info->section6_sub1_image" class="fh5co-press-img" style="background-image: url({$layout_info->section6_sub1_image})" ></div>
 					<div class="fh5co-press-text">
-						<h3 class="h2 fh5co-press-title">Simplicity <span class="fh5co-border"></span></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+						<h3 class="h2 fh5co-press-title">{$layout_info->section6_sub1_title} <span class="fh5co-border"></span></h3>
+						<p>
+							{nl2br($layout_info->section6_sub1_text)}
+						</p>
+						<p cond="use_section6_sub1_button">
+							<a href="{$layout_info->section6_sub1_button_link}" class="btn btn-primary btn-sm">{$layout_info->section6_sub1_button_name}</a>
+						</p>
 					</div>
 				</div>
-				<!-- Press Item -->
+				<!-- Press Item --
 			</div>
 
 			<div class="col-md-6">
-				<!-- Press Item -->
+				<!-- Press Item --
 				<div class="fh5co-press-item to-animate">
 					<div class="fh5co-press-img" style="background-image: url(images/img_8.jpg)">
 					</div>
@@ -1161,11 +1501,11 @@
 						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
 					</div>
 				</div>
-				<!-- Press Item -->
+				<!-- Press Item --
 			</div>
 
 			<div class="col-md-6">
-				<!-- Press Item -->
+				<!-- Press Item --
 				<div class="fh5co-press-item to-animate">
 					<div class="fh5co-press-img" style="background-image: url(images/img_9.jpg);">
 					</div>
@@ -1175,11 +1515,11 @@
 						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
 					</div>
 				</div>
-				<!-- Press Item -->
+				<!-- Press Item --
 			</div>
 
 			<div class="col-md-6">
-				<!-- Press Item -->
+				<!-- Press Item --
 				<div class="fh5co-press-item to-animate">
 					<div class="fh5co-press-img" style="background-image: url(images/img_10.jpg);">
 					</div>
@@ -1189,14 +1529,13 @@
 						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
 					</div>
 				</div>
-				<!-- Press Item -->
+				<!-- Press Item --
 			</div>
 
 		</div>
 	</div>
 </div>
-
-
+-->
 <footer id="footer" role="contentinfo">
 	<div class="container">
 		<div class="row row-bottom-padded-sm">
@@ -1280,11 +1619,11 @@
 </script>
 
 <script>
-	$(function() {
-		$('.dropdown-toggle').dropdown();
-
+	jQuery(function() {
+		jQuery('#grade{$layout_info->section5_grade1_popular}').addClass('popular');
 	});
 </script>
+
 <!-- Button trigger modal -->
 
 <!--

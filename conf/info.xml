@@ -634,11 +634,11 @@
             <var name="section2_count" type="select">
                 <title xml:lang="ko">섹션 2 갯수</title>
                 <description xml:lang="ko">섹션 2의 아이템 갯수를 선택합니다.(기본 6개)</description>
-                <options value="3">
-                    <title xml:lang="ko">3</title>
-                </options>
                 <options value="6">
                     <title xml:lang="ko">6</title>
+                </options>
+                <options value="3">
+                    <title xml:lang="ko">3</title>
                 </options>
             </var>
 
@@ -749,7 +749,7 @@
 
             <var name="section2_sub6_icon" type="text">
                 <title xml:lang="ko">서브 6 아이콘</title>
-                <description xml:lang="ko">서브 6 아이콘 모양을 입력합니다.(기본값: fa fa-book, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+                <description xml:lang="ko">서브 6 아이콘 모양을 입력합니다.(기본값: fa fa-magnet, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
             </var>
             <var name="section2_sub6_icon_color" type="text">
                 <title xml:lang="ko">서브 6 아이콘 색상</title>
@@ -768,6 +768,571 @@
                 <description xml:lang="ko">서브 6 내용을 입력합니다.</description>
             </var>
 
+
+        </group>
+        <group>
+            <title xml:lang="ko">Section 3</title>
+            <var name="section3_top_title" type="text">
+                <title xml:lang="ko">메뉴 제목</title>
+                <description xml:lang="ko">Navbar에 노출되는 제목을 입력합니다.</description>
+            </var>
+            <var name="section3_title" type="text">
+                <title xml:lang="ko">섹션 3 제목</title>
+                <description xml:lang="ko">섹션 3 제목을 입력합니다.</description>
+            </var>
+            <var name="section3_content" type="textarea">
+                <title xml:lang="ko">섹션 3 부제목</title>
+                <description xml:lang="ko">섹션 3 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
+            </var>
+            <var name="section3_count" type="select">
+                <title xml:lang="ko">섹션 3 갯수</title>
+                <description xml:lang="ko">섹션 3의 아이템 갯수를 선택합니다.(기본 6개)</description>
+                <options value="6">
+                    <title xml:lang="ko">6</title>
+                </options>
+                <options value="3">
+                    <title xml:lang="ko">3</title>
+                </options>
+            </var>
+
+            <var name="section3_sub1_icon" type="text">
+                <title xml:lang="ko">서브 1 아이콘</title>
+                <description xml:lang="ko">서브 1 아이콘 모양을 입력합니다.(기본값: fa fa-book, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section3_sub1_title" type="text">
+                <title xml:lang="ko">서브 1 제목</title>
+                <description xml:lang="ko">서브 1 제목을 입력합니다.</description>
+            </var>
+            <var name="section3_sub1_content" type="textarea">
+                <title xml:lang="ko">서브 1 내용</title>
+                <description xml:lang="ko">서브 1 내용을 입력합니다.</description>
+            </var>
+
+            <var name="section3_sub2_icon" type="text">
+                <title xml:lang="ko">서브 2 아이콘</title>
+                <description xml:lang="ko">서브 2 아이콘 모양을 입력합니다.(기본값: xi-sitemap, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section3_sub2_title" type="text">
+                <title xml:lang="ko">서브 2 제목</title>
+                <description xml:lang="ko">서브 2 제목을 입력합니다.</description>
+            </var>
+            <var name="section3_sub2_content" type="textarea">
+                <title xml:lang="ko">서브 2 내용</title>
+                <description xml:lang="ko">서브 2 내용을 입력합니다.</description>
+            </var>
+
+            <var name="section3_sub3_icon" type="text">
+                <title xml:lang="ko">서브 3 아이콘</title>
+                <description xml:lang="ko">서브 3 아이콘 모양을 입력합니다.(기본값: fa fa-cloud, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section3_sub3_title" type="text">
+                <title xml:lang="ko">서브 3 제목</title>
+                <description xml:lang="ko">서브 3 제목을 입력합니다.</description>
+            </var>
+            <var name="section3_sub3_content" type="textarea">
+                <title xml:lang="ko">서브 3 내용</title>
+                <description xml:lang="ko">서브 3 내용을 입력합니다.</description>
+            </var>
+
+            <var name="section3_sub4_icon" type="text">
+                <title xml:lang="ko">서브 4 아이콘</title>
+                <description xml:lang="ko">서브 4 아이콘 모양을 입력합니다.(기본값: fa fa-bolt, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section3_sub4_title" type="text">
+                <title xml:lang="ko">서브 4 제목</title>
+                <description xml:lang="ko">서브 4 제목을 입력합니다.</description>
+            </var>
+            <var name="section3_sub4_content" type="textarea">
+                <title xml:lang="ko">서브 4 내용</title>
+                <description xml:lang="ko">서브 4 내용을 입력합니다.</description>
+            </var>
+
+            <var name="section3_sub5_icon" type="text">
+                <title xml:lang="ko">서브 5 아이콘</title>
+                <description xml:lang="ko">서브 5 아이콘 모양을 입력합니다.(기본값: xi-paper, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section3_sub5_title" type="text">
+                <title xml:lang="ko">서브 5 제목</title>
+                <description xml:lang="ko">서브 5 제목을 입력합니다.</description>
+            </var>
+            <var name="section3_sub5_content" type="textarea">
+                <title xml:lang="ko">서브 5 내용</title>
+                <description xml:lang="ko">서브 5 내용을 입력합니다.</description>
+            </var>
+
+            <var name="section3_sub6_icon" type="text">
+                <title xml:lang="ko">서브 6 아이콘</title>
+                <description xml:lang="ko">서브 6 아이콘 모양을 입력합니다.(기본값: fa fa-magnet, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section3_sub6_title" type="text">
+                <title xml:lang="ko">서브 6 제목</title>
+                <description xml:lang="ko">서브 6 제목을 입력합니다.</description>
+            </var>
+            <var name="section3_sub6_content" type="textarea">
+                <title xml:lang="ko">서브 6 내용</title>
+                <description xml:lang="ko">서브 6 내용을 입력합니다.</description>
+            </var>
+
+            <var name="use_section3_button" type="select">
+                <title xml:lang="ko">버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section3_button_name" type="text">
+                <title xml:lang="ko">섹션 3 버튼 이름</title>
+            </var>
+            <var name="section3_button_link" type="text">
+                <title xml:lang="ko">섹션 3 링크</title>
+            </var>
+        </group>
+        <group>
+            <title xml:lang="ko">Section 4</title>
+            <var name="section4_top_title" type="text">
+                <title xml:lang="ko">메뉴 제목</title>
+                <description xml:lang="ko">Navbar에 노출되는 제목을 입력합니다.</description>
+            </var>
+            <var name="section4_title" type="text">
+                <title xml:lang="ko">섹션 4 제목</title>
+                <description xml:lang="ko">섹션 4 제목을 입력합니다.</description>
+            </var>
+            <var name="section4_content" type="textarea">
+                <title xml:lang="ko">섹션 4 부제목</title>
+                <description xml:lang="ko">섹션 4 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
+            </var>
+            <var name="section4_count" type="select">
+                <title xml:lang="ko">섹션 4 갯수</title>
+                <description xml:lang="ko">섹션 4의 아이템 갯수를 선택합니다.(기본 6개)</description>
+                <options value="6">
+                    <title xml:lang="ko">6</title>
+                </options>
+                <options value="3">
+                    <title xml:lang="ko">3</title>
+                </options>
+            </var>
+
+            <var name="section4_sub1_icon" type="text">
+                <title xml:lang="ko">서브 1 아이콘</title>
+                <description xml:lang="ko">서브 1 아이콘 모양을 입력합니다.(기본값: fa fa-quote-left, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section4_sub1_content" type="textarea">
+                <title xml:lang="ko">서브 1 내용</title>
+                <description xml:lang="ko">서브 1 내용을 입력합니다.</description>
+            </var>
+            <var name="section4_sub1_name" type="text">
+                <title xml:lang="ko">서브 1 이름</title>
+                <description xml:lang="ko">서브 1 이름을 입력합니다.</description>
+            </var>
+            <var name="section4_sub1_info" type="text">
+                <title xml:lang="ko">서브 1 정보</title>
+                <description xml:lang="ko">서브 1 정보을 입력합니다.</description>
+            </var>
+
+            <var name="section4_sub2_icon" type="text">
+                <title xml:lang="ko">서브 2 아이콘</title>
+                <description xml:lang="ko">서브 2 아이콘 모양을 입력합니다.(기본값: fa fa-quote-left, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section4_sub2_content" type="textarea">
+                <title xml:lang="ko">서브 2 내용</title>
+                <description xml:lang="ko">서브 2 내용을 입력합니다.</description>
+            </var>
+            <var name="section4_sub2_name" type="text">
+                <title xml:lang="ko">서브 2 이름</title>
+                <description xml:lang="ko">서브 2 이름을 입력합니다.</description>
+            </var>
+            <var name="section4_sub2_info" type="text">
+                <title xml:lang="ko">서브 2 정보</title>
+                <description xml:lang="ko">서브 2 정보을 입력합니다.</description>
+            </var>
+
+            <var name="section4_sub3_icon" type="text">
+                <title xml:lang="ko">서브 3 아이콘</title>
+                <description xml:lang="ko">서브 3 아이콘 모양을 입력합니다.(기본값: fa fa-quote-left, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section4_sub3_content" type="textarea">
+                <title xml:lang="ko">서브 3 내용</title>
+                <description xml:lang="ko">서브 3 내용을 입력합니다.</description>
+            </var>
+            <var name="section4_sub3_name" type="text">
+                <title xml:lang="ko">서브 3 이름</title>
+                <description xml:lang="ko">서브 3 이름을 입력합니다.</description>
+            </var>
+            <var name="section4_sub3_info" type="text">
+                <title xml:lang="ko">서브 3 정보</title>
+                <description xml:lang="ko">서브 3 정보을 입력합니다.</description>
+            </var>
+
+            <var name="section4_sub4_icon" type="text">
+                <title xml:lang="ko">서브 4 아이콘</title>
+                <description xml:lang="ko">서브 4 아이콘 모양을 입력합니다.(기본값: fa fa-quote-left, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section4_sub4_content" type="textarea">
+                <title xml:lang="ko">서브 4 내용</title>
+                <description xml:lang="ko">서브 4 내용을 입력합니다.</description>
+            </var>
+            <var name="section4_sub4_name" type="text">
+                <title xml:lang="ko">서브 4 이름</title>
+                <description xml:lang="ko">서브 4 이름을 입력합니다.</description>
+            </var>
+            <var name="section4_sub4_info" type="text">
+                <title xml:lang="ko">서브 4 정보</title>
+                <description xml:lang="ko">서브 4 정보을 입력합니다.</description>
+            </var>
+
+            <var name="section4_sub5_icon" type="text">
+                <title xml:lang="ko">서브 5 아이콘</title>
+                <description xml:lang="ko">서브 5 아이콘 모양을 입력합니다.(기본값: fa fa-quote-left, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section4_sub5_content" type="textarea">
+                <title xml:lang="ko">서브 5 내용</title>
+                <description xml:lang="ko">서브 5 내용을 입력합니다.</description>
+            </var>
+            <var name="section4_sub5_name" type="text">
+                <title xml:lang="ko">서브 5 이름</title>
+                <description xml:lang="ko">서브 5 이름을 입력합니다.</description>
+            </var>
+            <var name="section4_sub5_info" type="text">
+                <title xml:lang="ko">서브 5 정보</title>
+                <description xml:lang="ko">서브 5 정보을 입력합니다.</description>
+            </var>
+
+            <var name="section4_sub6_icon" type="text">
+                <title xml:lang="ko">서브 6 아이콘</title>
+                <description xml:lang="ko">서브 6 아이콘 모양을 입력합니다.(기본값: fa fa-quote-left, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section4_sub6_content" type="textarea">
+                <title xml:lang="ko">서브 6 내용</title>
+                <description xml:lang="ko">서브 6 내용을 입력합니다.</description>
+            </var>
+            <var name="section4_sub6_name" type="text">
+                <title xml:lang="ko">서브 6 이름</title>
+                <description xml:lang="ko">서브 6 이름을 입력합니다.</description>
+            </var>
+            <var name="section4_sub6_info" type="text">
+                <title xml:lang="ko">서브 6 정보</title>
+                <description xml:lang="ko">서브 6 정보을 입력합니다.</description>
+            </var>
+
+        </group>
+        <group>
+            <title xml:lang="ko">Section 5</title>
+            <var name="section5_top_title" type="text">
+                <title xml:lang="ko">메뉴 제목</title>
+                <description xml:lang="ko">Navbar에 노출되는 제목을 입력합니다.</description>
+            </var>
+            <var name="section5_title" type="text">
+                <title xml:lang="ko">섹션 4 제목</title>
+                <description xml:lang="ko">섹션 5 제목을 입력합니다.</description>
+            </var>
+            <var name="section5_content" type="textarea">
+                <title xml:lang="ko">섹션 4 부제목</title>
+                <description xml:lang="ko">섹션 5 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
+            </var>
+            <var name="section5_count" type="select">
+                <title xml:lang="ko">섹션 4 갯수</title>
+                <description xml:lang="ko">섹션 5의 아이템 갯수를 선택합니다.(기본 4개)</description>
+                <options value="4">
+                    <title xml:lang="ko">4</title>
+                </options>
+                <options value="3">
+                    <title xml:lang="ko">3</title>
+                </options>
+            </var>
+
+            <var name="section5_grade1_popular" type="select">
+                <title xml:lang="ko">강조 등급 선택 여부</title>
+                <description xml:lang="ko">강조 등급을 선택합니다.(기본값: 등급 3)</description>
+                <options value="1">등급 1</options>
+                <options value="2">등급 2</options>
+                <options value="3">등급 3</options>
+                <options value="4">등급 4</options>
+            </var>
+            <var name="section5_popular_name" type="text">
+                <title xml:lang="ko">강조 문구</title>
+                <description xml:lang="ko">강조 문구를 입력합니다.(기본값: 추천)</description>
+            </var>
+
+            <var name="section5_grade1_name" type="text">
+                <title xml:lang="ko">등급 1 이름</title>
+                <description xml:lang="ko">등급 1 이름을 입력합니다.</description>
+            </var>
+            <var name="section5_grade1_money_type" type="text">
+                <title xml:lang="ko">등급 1 표시 금액</title>
+                <description xml:lang="ko">등급 1의 표시 금액를 입력합니다.(기본값: fa fa-won, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section5_grade1_money" type="text">
+                <title xml:lang="ko">등급 1 금액</title>
+                <description xml:lang="ko">등급 1의 금액를 입력합니다.(기본값: 7,000, 자동으로 3자리수 콤마가 들어갑니다.)</description>
+            </var>
+            <var name="section5_grade1_pay_type" type="text">
+                <title xml:lang="ko">등급 1 과금 단위</title>
+                <description xml:lang="ko">등급 1의 과금 단위를 입력합니다.(기본값: 월)</description>
+            </var>
+            <var name="section5_grade1_description" type="text">
+                <title xml:lang="ko">등급 1 간단설명</title>
+                <description xml:lang="ko">등급 1의 간단설명을 입력합니다.</description>
+            </var>
+            <var name="section5_grade1_detail" type="textarea">
+                <title xml:lang="ko">등급 1 자세한 정보</title>
+                <description xml:lang="ko">등급 1의 자세한 정보을 입력합니다.(리스트로 출력되며, 엔터로 구분합니다.)</description>
+            </var>
+            <var name="use_section5_grade1_button" type="select">
+                <title xml:lang="ko">등급 1 버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section5_grade1_button_name" type="text">
+                <title xml:lang="ko">등급 1 버튼 이름</title>
+            </var>
+            <var name="section5_grade1_button_link" type="text">
+                <title xml:lang="ko">등급 1 링크</title>
+            </var>
+
+            <var name="section5_grade2_name" type="text">
+                <title xml:lang="ko">등급 2 이름</title>
+                <description xml:lang="ko">등급 2 이름을 입력합니다.</description>
+            </var>
+            <var name="section5_grade2_money_type" type="text">
+                <title xml:lang="ko">등급 2 표시 금액</title>
+                <description xml:lang="ko">등급 2의 표시 금액를 입력합니다.(기본값: fa fa-won, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section5_grade2_money" type="text">
+                <title xml:lang="ko">등급 2 금액</title>
+                <description xml:lang="ko">등급 2의 금액를 입력합니다.(기본값: 7,000, 자동으로 3자리수 콤마가 들어갑니다.)</description>
+            </var>
+            <var name="section5_grade2_pay_type" type="text">
+                <title xml:lang="ko">등급 2 과금 단위</title>
+                <description xml:lang="ko">등급 2의 과금 단위를 입력합니다.(기본값: 월)</description>
+            </var>
+            <var name="section5_grade2_description" type="text">
+                <title xml:lang="ko">등급 2 간단설명</title>
+                <description xml:lang="ko">등급 2의 간단설명을 입력합니다.</description>
+            </var>
+            <var name="section5_grade2_detail" type="textarea">
+                <title xml:lang="ko">등급 2 자세한 정보</title>
+                <description xml:lang="ko">등급 2의 자세한 정보을 입력합니다.(리스트로 출력되며, 엔터로 구분합니다.)</description>
+            </var>
+            <var name="use_section5_grade2_button" type="select">
+                <title xml:lang="ko">등급 2 버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section5_grade2_button_name" type="text">
+                <title xml:lang="ko">등급 2 버튼 이름</title>
+            </var>
+            <var name="section5_grade2_button_link" type="text">
+                <title xml:lang="ko">등급 2 링크</title>
+            </var>
+
+            <var name="section5_grade3_name" type="text">
+                <title xml:lang="ko">등급 3 이름</title>
+                <description xml:lang="ko">등급 3 이름을 입력합니다.</description>
+            </var>
+            <var name="section5_grade3_money_type" type="text">
+                <title xml:lang="ko">등급 3 표시 금액</title>
+                <description xml:lang="ko">등급 3의 표시 금액를 입력합니다.(기본값: fa fa-won, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section5_grade3_money" type="text">
+                <title xml:lang="ko">등급 3 금액</title>
+                <description xml:lang="ko">등급 3의 금액를 입력합니다.(기본값: 7,000, 자동으로 3자리수 콤마가 들어갑니다.)</description>
+            </var>
+            <var name="section5_grade3_pay_type" type="text">
+                <title xml:lang="ko">등급 3 과금 단위</title>
+                <description xml:lang="ko">등급 3의 과금 단위를 입력합니다.(기본값: 월)</description>
+            </var>
+            <var name="section5_grade3_description" type="text">
+                <title xml:lang="ko">등급 3 간단설명</title>
+                <description xml:lang="ko">등급 3의 간단설명을 입력합니다.</description>
+            </var>
+            <var name="section5_grade3_detail" type="textarea">
+                <title xml:lang="ko">등급 3 자세한 정보</title>
+                <description xml:lang="ko">등급 3의 자세한 정보을 입력합니다.(리스트로 출력되며, 엔터로 구분합니다.)</description>
+            </var>
+            <var name="use_section5_grade3_button" type="select">
+                <title xml:lang="ko">등급 3 버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section5_grade3_button_name" type="text">
+                <title xml:lang="ko">등급 3 버튼 이름</title>
+            </var>
+            <var name="section5_grade3_button_link" type="text">
+                <title xml:lang="ko">등급 3 링크</title>
+            </var>
+
+            <var name="section5_grade4_name" type="text">
+                <title xml:lang="ko">등급 4 이름</title>
+                <description xml:lang="ko">등급 4 이름을 입력합니다.</description>
+            </var>
+            <var name="section5_grade4_money_type" type="text">
+                <title xml:lang="ko">등급 4 표시 금액</title>
+                <description xml:lang="ko">등급 4의 표시 금액를 입력합니다.(기본값: fa fa-won, Font Awesome(fa fa-icon 형식으로 작성), XEIcon(xi-icon 형식으로 작성) 지원)</description>
+            </var>
+            <var name="section5_grade4_money" type="text">
+                <title xml:lang="ko">등급 4 금액</title>
+                <description xml:lang="ko">등급 4의 금액를 입력합니다.(기본값: 7,000, 자동으로 3자리수 콤마가 들어갑니다.)</description>
+            </var>
+            <var name="section5_grade4_pay_type" type="text">
+                <title xml:lang="ko">등급 4 과금 단위</title>
+                <description xml:lang="ko">등급 4의 과금 단위를 입력합니다.(기본값: 월)</description>
+            </var>
+            <var name="section5_grade4_description" type="text">
+                <title xml:lang="ko">등급 4 간단설명</title>
+                <description xml:lang="ko">등급 4의 간단설명을 입력합니다.</description>
+            </var>
+            <var name="section5_grade4_detail" type="textarea">
+                <title xml:lang="ko">등급 4 자세한 정보</title>
+                <description xml:lang="ko">등급 4의 자세한 정보을 입력합니다.(리스트로 출력되며, 엔터로 구분합니다.)</description>
+            </var>
+            <var name="use_section5_grade4_button" type="select">
+                <title xml:lang="ko">등급 4 버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section5_grade4_button_name" type="text">
+                <title xml:lang="ko">등급 4 버튼 이름</title>
+            </var>
+            <var name="section5_grade4_button_link" type="text">
+                <title xml:lang="ko">등급 4 링크</title>
+            </var>
+
+
+        </group>
+        <group>
+            <title xml:lang="ko">Section 6</title>
+            <var name="section6_top_title" type="text">
+                <title xml:lang="ko">메뉴 제목</title>
+                <description xml:lang="ko">Navbar에 노출되는 제목을 입력합니다.</description>
+            </var>
+
+            <var name="section6_count" type="select">
+                <title xml:lang="ko">섹션 6 갯수</title>
+                <options value="4">
+                    <title xml:lang="ko">4개</title>
+                </options>
+                <options value="2">
+                    <title xml:lang="ko">2개</title>
+                </options>
+            </var>
+
+            <var name="section6_sub1_title" type="text">
+                <title xml:lang="ko">서브 1 제목</title>
+            </var>
+            <var name="section6_sub1_text" type="textarea">
+                <title xml:lang="ko">서브 1 내용</title>
+            </var>
+            <var name="section6_sub1_image" type="image">
+                <title xml:lang="ko">서브 1 이미지</title>
+            </var>
+            <var name="use_section6_sub1_button" type="select">
+                <title xml:lang="ko">서브 1 버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section6_sub1_button_name" type="text">
+                <title xml:lang="ko">서브 1 버튼 이름</title>
+            </var>
+            <var name="section6_sub1_button_link" type="text">
+                <title xml:lang="ko">서브 1 버튼 링크</title>
+            </var>
+
+            <var name="section6_sub2_title" type="text">
+                <title xml:lang="ko">서브 2 제목</title>
+            </var>
+            <var name="section6_sub2_text" type="textarea">
+                <title xml:lang="ko">서브 2 내용</title>
+            </var>
+            <var name="section6_sub2_image" type="image">
+                <title xml:lang="ko">서브 2 이미지</title>
+            </var>
+            <var name="use_section6_sub2_button" type="select">
+                <title xml:lang="ko">서브 2 버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section6_sub2_button_name" type="text">
+                <title xml:lang="ko">서브 2 버튼 이름</title>
+            </var>
+            <var name="section6_sub2_button_link" type="text">
+                <title xml:lang="ko">서브 2 버튼 링크</title>
+            </var>
+
+            <var name="section6_sub3_title" type="text">
+                <title xml:lang="ko">서브 3 제목</title>
+            </var>
+            <var name="section6_sub3_text" type="textarea">
+                <title xml:lang="ko">서브 3 내용</title>
+            </var>
+            <var name="section6_sub3_image" type="image">
+                <title xml:lang="ko">서브 3 이미지</title>
+            </var>
+            <var name="use_section6_sub3_button" type="select">
+                <title xml:lang="ko">서브 3 버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section6_sub3_button_name" type="text">
+                <title xml:lang="ko">서브 3 버튼 이름</title>
+            </var>
+            <var name="section6_sub3_button_link" type="text">
+                <title xml:lang="ko">서브 3 버튼 링크</title>
+            </var>
+
+            <var name="section6_sub4_title" type="text">
+                <title xml:lang="ko">서브 4 제목</title>
+            </var>
+            <var name="section6_sub4_text" type="textarea">
+                <title xml:lang="ko">서브 4 내용</title>
+            </var>
+            <var name="section6_sub4_image" type="image">
+                <title xml:lang="ko">서브 4 이미지</title>
+            </var>
+            <var name="use_section6_sub4_button" type="select">
+                <title xml:lang="ko">서브 4 버튼 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
+            </var>
+            <var name="section6_sub4_button_name" type="text">
+                <title xml:lang="ko">서브 4 버튼 이름</title>
+            </var>
+            <var name="section6_sub4_button_link" type="text">
+                <title xml:lang="ko">서브 4 버튼 링크</title>
+            </var>
 
         </group>
     </extra_vars>
