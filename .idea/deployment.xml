@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="test server" preserveTimestamps="false">
+    <serverData>
+      <paths name="test server">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/xe/layouts/kimtajo_responsive_one_page" local="$PROJECT_DIR$/../kimtajo_responsive_one_page" web="/xe" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

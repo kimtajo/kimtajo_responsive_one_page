@@ -1,0 +1,1337 @@
+<load target="css/bootstrap.css" />
+<load target="css/common.css" />
+<load target="css/animate.css" />
+<load target="css/icomoon.css" />
+<load target="css/simple-line-icons.css" />
+<load target="css/owl.carousel.min.css" />
+<load target="css/owl.theme.default.min.css" />
+<load target="css/style.css" />
+<load target="../../common/xeicon/xeicon.min.css" />
+<load target="css/font-awesome.min.css" />
+
+<load cond="$layout_info->use_color === 'pink'" target="css/pink.css" />
+<load cond="$layout_info->use_color === 'blue'" target="css/blue.css" />
+<load cond="$layout_info->use_color === 'turquoise'" target="css/turquoise.css" />
+<load cond="$layout_info->use_color === 'orange'" target="css/orange.css" />
+<load cond="$layout_info->use_color === 'lightblue'" target="css/lightblue.css" />
+<load cond="$layout_info->use_color === 'brown'" target="css/brown.css" />
+<load cond="$layout_info->use_color === 'green'" target="css/green.css" />
+
+
+<load type="body" target="js/jquery.min.js" />
+<load type="body" target="js/jquery.easing.1.3.js" />
+<load type="body" target="js/bootstrap.min.js" />
+<load type="body" target="js/jquery.waypoints.min.js" />
+<load type="body" target="js/owl.carousel.min.js" />
+<load type="body" target="js/main.js" />
+
+
+<!-- 로고 세팅 -->
+<block cond="!$layout_info->logo_type">{@ $layout_info->logo_type = 'text'}</block>
+<block cond="!$layout_info->logo_text">{@ $layout_info->logo_text = 'TAJO'}</block>
+<!-- /.로고 세팅 -->
+
+
+
+<!-- 슬라이더 세팅 -->
+<block cond="!$layout_info->slider1_background_type">{@ $layout_info->slider1_background_type = 'color'}</block>
+<block cond="!$layout_info->slider1_background_color">{@ $layout_info->slider1_background_color = '#352f44'}</block>
+<block cond="!$layout_info->use_slider1_image">{@ $layout_info->use_slider1_image = 'Y'}</block>
+<block cond="!$layout_info->slider1_direction">{@ $layout_info->slider1_direction = 'left'}</block>
+<block cond="!$layout_info->slider1_header">{@ $layout_info->slider1_header = '제목을 입력하세요.'}</block>
+<block cond="!$layout_info->slider1_text">{@ $layout_info->slider1_text = '내용을 입력하세요.'}</block>
+<block cond="!$layout_info->use_slider1_button">{@ $layout_info->use_slider1_button = 'Y'}</block>
+<block cond="!$layout_info->slider1_button_name">{@ $layout_info->slider1_button_name = '버튼'}</block>
+<block cond="!$layout_info->slider1_button_link">{@ $layout_info->slider1_button_link = '#'}</block>
+
+<block cond="!$layout_info->slider2_background_type">{@ $layout_info->slider2_background_type = 'color'}</block>
+<block cond="!$layout_info->slider2_background_color">{@ $layout_info->slider2_background_color = '#352f44'}</block>
+<block cond="!$layout_info->use_slider2_image">{@ $layout_info->use_slider2_image = 'Y'}</block>
+<block cond="!$layout_info->slider2_direction">{@ $layout_info->slider2_direction = 'right'}</block>
+<block cond="!$layout_info->slider2_header">{@ $layout_info->slider2_header = '제목을 입력하세요.'}</block>
+<block cond="!$layout_info->slider2_text">{@ $layout_info->slider2_text = '내용을 입력하세요.'}</block>
+<block cond="!$layout_info->use_slider2_button">{@ $layout_info->use_slider2_button = 'Y'}</block>
+<block cond="!$layout_info->slider2_button_name">{@ $layout_info->slider2_button_name = '버튼'}</block>
+<block cond="!$layout_info->slider2_button_link">{@ $layout_info->slider2_button_link = '#'}</block>
+
+<block cond="$layout_info->slider_count >= 3">
+	<block cond="!$layout_info->slider3_background_type">{@ $layout_info->slider3_background_type = 'color'}</block>
+	<block cond="!$layout_info->slider3_background_color">{@ $layout_info->slider3_background_color = '#352f44'}</block>
+	<block cond="!$layout_info->use_slider3_image">{@ $layout_info->use_slider3_image = 'Y'}</block>
+	<block cond="!$layout_info->slider3_direction">{@ $layout_info->slider3_direction = 'center'}</block>
+	<block cond="!$layout_info->slider3_header">{@ $layout_info->slider3_header = '제목을 입력하세요.'}</block>
+	<block cond="!$layout_info->slider3_text">{@ $layout_info->slider3_text = '내용을 입력하세요.'}</block>
+	<block cond="!$layout_info->use_slider3_button">{@ $layout_info->use_slider3_button = 'Y'}</block>
+	<block cond="!$layout_info->slider3_button_name">{@ $layout_info->slider3_button_name = '버튼'}</block>
+	<block cond="!$layout_info->slider3_button_link">{@ $layout_info->slider3_button_link = '#'}</block>
+</block>
+
+<block cond="$layout_info->slider_count >= 4">
+	<block cond="!$layout_info->slider4_background_type">{@ $layout_info->slider4_background_type = 'color'}</block>
+	<block cond="!$layout_info->slider4_background_color">{@ $layout_info->slider4_background_color = '#352f44'}</block>
+	<block cond="!$layout_info->use_slider4_image">{@ $layout_info->use_slider4_image = 'Y'}</block>
+	<block cond="!$layout_info->slider4_direction">{@ $layout_info->slider4_direction = 'left'}</block>
+	<block cond="!$layout_info->slider4_header">{@ $layout_info->slider4_header = '제목을 입력하세요.'}</block>
+	<block cond="!$layout_info->slider4_text">{@ $layout_info->slider4_text = '내용을 입력하세요.'}</block>
+	<block cond="!$layout_info->use_slider4_button">{@ $layout_info->use_slider4_button = 'Y'}</block>
+	<block cond="!$layout_info->slider4_button_name">{@ $layout_info->slider4_button_name = '버튼'}</block>
+	<block cond="!$layout_info->slider4_button_link">{@ $layout_info->slider4_button_link = '#'}</block>
+</block>
+
+<block cond="$layout_info->slider_count >= 5">
+	<block cond="!$layout_info->slider5_background_type">{@ $layout_info->slider5_background_type = 'color'}</block>
+	<block cond="!$layout_info->slider5_background_color">{@ $layout_info->slider5_background_color = '#352f44'}</block>
+	<block cond="!$layout_info->use_slider5_image">{@ $layout_info->use_slider5_image = 'Y'}</block>
+	<block cond="!$layout_info->slider5_direction">{@ $layout_info->slider5_direction = 'right'}</block>
+	<block cond="!$layout_info->slider5_header">{@ $layout_info->slider5_header = '제목을 입력하세요.'}</block>
+	<block cond="!$layout_info->slider5_text">{@ $layout_info->slider5_text = '내용을 입력하세요.'}</block>
+	<block cond="!$layout_info->use_slider5_button">{@ $layout_info->use_slider5_button = 'Y'}</block>
+	<block cond="!$layout_info->slider5_button_name">{@ $layout_info->slider5_button_name = '버튼'}</block>
+	<block cond="!$layout_info->slider5_button_link">{@ $layout_info->slider5_button_link = '#'}</block>
+</block>
+<!-- /.슬라이더 세팅 -->
+
+<!-- Section 1 -->
+<block cond="$layout_info->use_section1 == 'Y'">
+	<!-- Navbar Title -->
+	<block cond="!$layout_info->section1_top_title">{@ $layout_info->section1_top_title = '섹션 1'}</block>
+	<!-- /.Navbar Title -->
+
+	<!-- Section 1 SubPage 1 Setting -->
+	<block cond="!$layout_info->section1_sub1_title">{@ $layout_info->section1_sub1_title = '섹션 1 - 서브 1'}</block>
+	<block cond="!$layout_info->section1_sub1_content">{@ $layout_info->section1_sub1_content = '섹션 1 - 서브 1의 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section1_sub1_info_title">{@ $layout_info->section1_sub1_info_title = '서브 1 이미지 소개 제목'}</block>
+	<block cond="!$layout_info->section1_sub1_info_content">{@ $layout_info->section1_sub1_info_content = '섹션 1 - 서브 1 이미지 소개 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section1_sub1_use_button">{@ $layout_info->section1_sub1_use_button = 'Y'}</block>
+	<block cond="!$layout_info->section1_sub1_button_name">{@ $layout_info->section1_sub1_button_name = '섹션 1 버튼'}</block>
+	<block cond="!$layout_info->section1_sub1_button_link">{@ $layout_info->section1_sub1_button_link = '#'}</block>
+	<!-- /.Section 1 SubPage 1 Setting -->
+
+	<!-- Section 1 SubPage 2 Setting -->
+	<block cond="!$layout_info->section1_sub2_title">{@ $layout_info->section1_sub2_title = '섹션 1 - 서브 2'}</block>
+	<block cond="!$layout_info->section1_sub2_count">{@ $layout_info->section1_sub2_count = '3'}</block>
+
+	<block cond="!$layout_info->section1_sub2_1_title">{@ $layout_info->section1_sub2_1_title = '서브 2-1 제목'}</block>
+	<block cond="!$layout_info->section1_sub2_1_sub_title">{@ $layout_info->section1_sub2_1_sub_title = '서브 2-1 부제목'}</block>
+	<block cond="!$layout_info->section1_sub2_1_content">{@ $layout_info->section1_sub2_1_content = '서브 2-1 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section1_sub2_2_title">{@ $layout_info->section1_sub2_2_title = '서브 2-2 제목'}</block>
+	<block cond="!$layout_info->section1_sub2_2_sub_title">{@ $layout_info->section1_sub2_2_sub_title = '서브 2-2 부제목'}</block>
+	<block cond="!$layout_info->section1_sub2_2_content">{@ $layout_info->section1_sub2_2_content = '서브 2-2 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section1_sub2_3_title">{@ $layout_info->section1_sub2_3_title = '서브 2-3 제목'}</block>
+	<block cond="!$layout_info->section1_sub2_3_sub_title">{@ $layout_info->section1_sub2_3_sub_title = '서브 2-3 부제목'}</block>
+	<block cond="!$layout_info->section1_sub2_3_content">{@ $layout_info->section1_sub2_3_content = '서브 2-3 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section1_sub2_4_title">{@ $layout_info->section1_sub2_4_title = '서브 2-4 제목'}</block>
+	<block cond="!$layout_info->section1_sub2_4_sub_title">{@ $layout_info->section1_sub2_4_sub_title = '서브 2-4 부제목'}</block>
+	<block cond="!$layout_info->section1_sub2_4_content">{@ $layout_info->section1_sub2_4_content = '서브 2-4 내용을 입력합니다.'}</block>
+
+	<!-- /.Section 1 SubPage 2 Setting -->
+</block>
+<!-- /.Section 1 -->
+
+<!-- Section 2 -->
+<block cond="$layout_info->use_section2 == 'Y'">
+	<!-- Navbar Title -->
+	<block cond="!$layout_info->section2_top_title">{@ $layout_info->section2_top_title = '섹션 2'}</block>
+	<!-- /.Navbar Title -->
+
+	<block cond="!$layout_info->section2_title">{@ $layout_info->section2_title = '섹션 2 제목'}</block>
+	<block cond="!$layout_info->section2_content">{@ $layout_info->section2_content = '섹션 2의 내용을 입력합니다.'}</block>
+	<block cond="!$layout_info->section2_count">{@ $layout_info->section2_count = 6}</block>
+
+	<block cond="!$layout_info->section2_sub1_icon">{@ $layout_info->section2_sub1_icon = 'fa fa-book'}</block>
+	<block cond="!$layout_info->section2_sub1_icon_color">{@ $layout_info->section2_sub1_icon_color = '#fff'}</block>
+	<block cond="!$layout_info->section2_sub1_icon_bgcolor">{@ $layout_info->section2_sub1_icon_bgcolor = '#2aaf67'}</block>
+	<block cond="!$layout_info->section2_sub1_title">{@ $layout_info->section2_sub1_title = '섹션 2 서브 1 제목'}</block>
+	<block cond="!$layout_info->section2_sub1_content">{@ $layout_info->section2_sub1_content = '섹션 2 서브 1 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section2_sub2_icon">{@ $layout_info->section2_sub2_icon = 'xi-sitemap'}</block>
+	<block cond="!$layout_info->section2_sub2_icon_color">{@ $layout_info->section2_sub2_icon_color = '#fff'}</block>
+	<block cond="!$layout_info->section2_sub2_icon_bgcolor">{@ $layout_info->section2_sub2_icon_bgcolor = '#00bff3'}</block>
+	<block cond="!$layout_info->section2_sub2_title">{@ $layout_info->section2_sub2_title = '섹션 2 서브 2 제목'}</block>
+	<block cond="!$layout_info->section2_sub2_content">{@ $layout_info->section2_sub2_content = '섹션 2 서브 2 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section2_sub3_icon">{@ $layout_info->section2_sub3_icon = 'fa fa-cloud'}</block>
+	<block cond="!$layout_info->section2_sub3_icon_color">{@ $layout_info->section2_sub3_icon_color = '#fff'}</block>
+	<block cond="!$layout_info->section2_sub3_icon_bgcolor">{@ $layout_info->section2_sub3_icon_bgcolor = '#f26522'}</block>
+	<block cond="!$layout_info->section2_sub3_title">{@ $layout_info->section2_sub3_title = '섹션 2 서브 3 제목'}</block>
+	<block cond="!$layout_info->section2_sub3_content">{@ $layout_info->section2_sub3_content = '섹션 2 서브 3 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section2_sub4_icon">{@ $layout_info->section2_sub4_icon = 'fa fa-bolt'}</block>
+	<block cond="!$layout_info->section2_sub4_icon_color">{@ $layout_info->section2_sub4_icon_color = '#fff'}</block>
+	<block cond="!$layout_info->section2_sub4_icon_bgcolor">{@ $layout_info->section2_sub4_icon_bgcolor = '#e52b50'}</block>
+	<block cond="!$layout_info->section2_sub4_title">{@ $layout_info->section2_sub4_title = '섹션 2 서브 4 제목'}</block>
+	<block cond="!$layout_info->section2_sub4_content">{@ $layout_info->section2_sub4_content = '섹션 2 서브 4 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section2_sub5_icon">{@ $layout_info->section2_sub5_icon = 'xi-paper'}</block>
+	<block cond="!$layout_info->section2_sub5_icon_color">{@ $layout_info->section2_sub5_icon_color = '#fff'}</block>
+	<block cond="!$layout_info->section2_sub5_icon_bgcolor">{@ $layout_info->section2_sub5_icon_bgcolor = '#2fc5cc'}</block>
+	<block cond="!$layout_info->section2_sub5_title">{@ $layout_info->section2_sub5_title = '섹션 2 서브 5 제목'}</block>
+	<block cond="!$layout_info->section2_sub5_content">{@ $layout_info->section2_sub5_content = '섹션 2 서브 5 내용을 입력합니다.'}</block>
+
+	<block cond="!$layout_info->section2_sub6_icon">{@ $layout_info->section2_sub6_icon = 'xi-magnet'}</block>
+	<block cond="!$layout_info->section2_sub6_icon_color">{@ $layout_info->section2_sub6_icon_color = '#fff'}</block>
+	<block cond="!$layout_info->section2_sub6_icon_bgcolor">{@ $layout_info->section2_sub6_icon_bgcolor = '#6173f4'}</block>
+	<block cond="!$layout_info->section2_sub6_title">{@ $layout_info->section2_sub6_title = '섹션 2 서브 6 제목'}</block>
+	<block cond="!$layout_info->section2_sub6_content">{@ $layout_info->section2_sub6_content = '섹션 2 서브 6 내용을 입력합니다.'}</block>
+
+</block>
+<!-- /.Section 2 -->
+
+
+<!-- 포인트 색상(지정) -->
+<block cond="$layout_info->use_color === 'custom'">
+	<style>
+		a,a:hover,a:active,a:focus,#fh5co-header .navbar-brand,#fh5co-header #navbar li a:hover,#fh5co-header #navbar li.active a,#fh5co-header.navbar-fixed-top .navbar-brand,#fh5co-header.navbar-fixed-top #navbar li a:hover,#fh5co-header.navbar-fixed-top #navbar li.active a, #fh5co-header .navbar-default .brand-slogan em, #fh5co-features .fh5co-service .fh5co-icon i {color: {$layout_info->custom_color};}
+		#fh5co-header #navbar li a span:before, #fh5co-header #navbar ul > li.open > a {background-color: {$layout_info->custom_color};}
+
+		.section-heading h2:after, #fh5co-testimonials, #fh5co-testimonials .box-testimony blockquote .quote, #fh5co-pricing .price-box.popular .popular-text, #fh5co-press .fh5co-press-item .fh5co-press-text .fh5co-press-title .fh5co-border,
+		.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after,
+		.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after,
+		.btn.btn-primary,
+		.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus,
+		.social li a.social-box,
+		.social li a.social-circle,
+		.social.social-box a,
+		.social.social-circle a
+		{background: {$layout_info->custom_color};}
+
+		#fh5co-pricing .price-box.popular{border-color: {$layout_info->custom_color};}
+
+		#fh5co-pricing .price-box.popular .popular-text:after
+		{border-top-color: {$layout_info->custom_color};}
+
+		.fh5co-nav-toggle i{ color:{$layout_info->custom_color}; background:{$layout_info->custom_color}; }
+	</style>
+</block>
+<!-- /.포인트 색상(지정) -->
+<header role="banner" id="fh5co-header">
+	<div class="container">
+		<!-- <div class="row"> -->
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<!-- Mobile Toggle Menu Button -->
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+				<!--@if($layout_info->logo_type == 'text')-->
+				<a class="navbar-brand" href="{getUrl('')}">
+					{$layout_info->logo_text}
+				</a>
+				<!--@else-->
+
+				<a class="navbar-brand-img" href="{getUrl('')}">
+					<!--@if(!$layout_info->transparent_logo_image)-->
+					<img src="{$layout_info->logo_image}" alt="{$layout_info->logo_text}" />
+					<!--@else-->
+					<img id="transparent_logo_image" src="{$layout_info->transparent_logo_image}" alt="{$layout_info->logo_text}" />
+					<img id="logo_image" src="{$layout_info->logo_image}" alt="{$layout_info->logo_text}" class="hidden" />
+					<!--@end-->
+				</a>
+				<!--@end-->
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+					<li cond="$layout_info->use_section1 === 'Y'"><a href="#" data-nav-section="section1"><span>{$layout_info->section1_top_title}</span></a></li>
+					<li cond="$layout_info->use_section2 === 'Y'"><a href="#" data-nav-section="section2"><span>{$layout_info->section2_top_title}</span></a></li>
+					<li cond="$layout_info->use_section3 === 'Y'"><a href="#" data-nav-section="section3"><span>기능</span></a></li>
+					<li cond="$layout_info->use_section4 === 'Y'"><a href="#" data-nav-section="section4"><span>리뷰</span></a></li>
+					<li cond="$layout_info->use_section5 === 'Y'"><a href="#" data-nav-section="section5"><span>비용</span></a></li>
+					<li cond="$layout_info->use_section6 === 'Y'"><a href="#" data-nav-section="section6"><span>Contact</span></a></li>
+
+					<!-- 로그인 메뉴 -->
+					<li>
+						<a id="user_info" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+							<i class="icon-user"></i>
+						</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="user_info">
+								<!--@if(!$is_logged)-->
+								<li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="xi-user-add"></i>  {$lang->cmd_login}</a></a></li>
+								<!--@else-->
+								<li><a href="{getUrl('act', 'dispMemberLogout')}"><i class="icon-logout"></i> {$lang->cmd_logout}</a></li>
+								<li cond="$logged_info->is_admin == 'Y'"><a href="{getUrl('', 'module', 'admin')}" target="_blank"><i class="xi-cog"></i> {$lang->cmd_management}</a></li>
+								<!--@end-->
+							</ul>
+					</li>
+					<!-- /.로그인 메뉴 -->
+				</ul>
+			</div>
+		</nav>
+		<!-- </div> -->
+	</div>
+</header>
+
+<div id="slider" data-section="home">
+	<div class="owl-carousel owl-carousel-fullwidth">
+
+		<div class="item" style="background: {$layout_info->slider1_background_color};"|cond="$layout_info->slider1_background_type === 'color'" style="background-image:url({$layout_info->slider1_background_image})">
+			<div class="container" style="position: relative;">
+				<div class="row">
+					<!--@if($layout_info->slider1_direction === 'left')-->
+					<div class="col-md-7 col-sm-7">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider1_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider1_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider1_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider1_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider1_image === 'Y'" class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider1_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider1_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else if($layout_info->slider1_direction === 'right')-->
+					<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5 text-right">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider1_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider1_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider1_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider1_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider1_image === 'Y'" class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider1_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider1_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else-->
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider1_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider1_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider1_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider1_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<!--@end-->
+				</div>
+			</div>
+		</div>
+
+		<div class="item" style="background: {$layout_info->slider2_background_color};"|cond="$layout_info->slider2_background_type === 'color'" style="background-image:url({$layout_info->slider2_background_image})">
+			<div class="container" style="position: relative;">
+				<div class="row">
+					<!--@if($layout_info->slider2_direction === 'left')-->
+					<div class="col-md-7 col-sm-7">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider2_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider2_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider2_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider2_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider2_image === 'Y'" class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider2_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider2_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else if($layout_info->slider2_direction === 'right')-->
+					<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5 text-right">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider2_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider2_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider2_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider2_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider2_image === 'Y'" class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider2_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider2_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else-->
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider2_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider2_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider2_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider2_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<!--@end-->
+				</div>
+			</div>
+		</div>
+
+		<div cond="$layout_info->slider_count>=3" class="item" style="background: {$layout_info->slider3_background_color};"|cond="$layout_info->slider3_background_type === 'color'" style="background-image:url({$layout_info->slider3_background_image})">
+			<div class="container" style="position: relative;">
+				<div class="row">
+					<!--@if($layout_info->slider3_direction === 'left')-->
+					<div class="col-md-7 col-sm-7">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider3_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider3_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider3_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider3_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider3_image === 'Y'" class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider3_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider3_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else if($layout_info->slider3_direction === 'right')-->
+					<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5 text-right">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider3_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider3_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider3_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider3_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider3_image === 'Y'" class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider3_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider3_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else-->
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider3_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider3_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider3_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider3_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<!--@end-->
+				</div>
+			</div>
+		</div>
+
+		<div cond="$layout_info->slider_count>=4" class="item" style="background: {$layout_info->slider4_background_color};"|cond="$layout_info->slider4_background_type === 'color'" style="background-image:url({$layout_info->slider4_background_image})">
+			<div class="container" style="position: relative;">
+				<div class="row">
+					<!--@if($layout_info->slider4_direction === 'left')-->
+					<div class="col-md-7 col-sm-7">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider4_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider4_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider4_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider4_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider4_image === 'Y'" class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider4_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider4_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else if($layout_info->slider4_direction === 'right')-->
+					<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5 text-right">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider4_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider4_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider4_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider4_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider4_image === 'Y'" class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider4_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider4_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else-->
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider4_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider4_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider4_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider4_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<!--@end-->
+				</div>
+			</div>
+		</div>
+
+		<div cond="$layout_info->slider_count>=5" class="item" style="background: {$layout_info->slider5_background_color};"|cond="$layout_info->slider5_background_type === 'color'" style="background-image:url({$layout_info->slider5_background_image})">
+			<div class="container" style="position: relative;">
+				<div class="row">
+					<!--@if($layout_info->slider5_direction === 'left')-->
+					<div class="col-md-7 col-sm-7">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider5_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider5_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider5_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider5_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider5_image === 'Y'" class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider5_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider5_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else if($layout_info->slider5_direction === 'right')-->
+					<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5 text-right">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider5_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider5_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider5_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider5_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<div cond="$layout_info->use_slider5_image === 'Y'" class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+						<div class="iphone to-animate-2">
+							<!--@if(!$layout_info->slider5_image)-->
+							<img src="images/iphone-1.png">
+							<!--@else-->
+							<img src="{$layout_info->slider5_image}">
+							<!--@end-->
+						</div>
+					</div>
+
+					<!--@else-->
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="fh5co-owl-text-wrap">
+							<div class="fh5co-owl-text">
+								<h1 class="fh5co-lead to-animate">{$layout_info->slider5_header}</h1>
+								<h2 class="fh5co-sub-lead to-animate">
+									{nl2br($layout_info->slider5_text)}
+								</h2>
+								<p class="to-animate-2"><a href="{$layout_info->slider5_button_link}" target="_blank" class="btn btn-primary btn-lg">{$layout_info->slider5_button_name}</a></p>
+							</div>
+						</div>
+					</div>
+					<!--@end-->
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div cond="$layout_info->use_section1 === 'Y'" id="fh5co-about-us" data-section="section1">
+	<div class="container">
+		<!-- section1 sub 1 -->
+		<div class="row row-bottom-padded-lg" id="about-us">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="to-animate">{$layout_info->section1_sub1_title}</h2>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 to-animate">
+						<h3>
+							{nl2br($layout_info->section1_sub1_content)}
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 to-animate">
+				<!--@if(!$layout_info->section1_sub1_image)-->
+				<img src="images/img_1.jpg" class="img-responsive img-rounded">
+				<!--@else-->
+				<img src="{$layout_info->section1_sub1_image}" class="img-responsive img-rounded">
+				<!--@end-->
+			</div>
+			<div class="col-md-4 to-animate">
+				<h2>{$layout_info->section1_sub1_info_title}</h2>
+				{nl2br($layout_info->section1_sub1_info_content)}
+				<p><a cond="$layout_info->section1_sub1_use_button === 'Y'" href="{$layout_info->section1_sub1_button_link}" class="btn btn-primary">{$layout_info->section1_sub1_button_name}</a></p>
+			</div>
+		</div>
+		<!-- /.section1 sub 1 -->
+
+		<!-- section1 sub 2 -->
+		<div class="row" id="team">
+			<div class="col-md-12 section-heading text-center to-animate">
+				<h2>{$layout_info->section1_sub2_title}</h2>
+			</div>
+			<div class="col-md-12">
+				<!--@if($layout_info->section1_sub2_count == 2)-->
+				<div class="row">
+					<div class="text-center to-animate col-md-6">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_1_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_1_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_1_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_1_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_1_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_1_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+					<div class="text-center to-animate col-md-6">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_2_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_2_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_2_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_2_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_2_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_2_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+				</div>
+				<!--@else if($layout_info->section1_sub2_count == 3)-->
+				<div class="row">
+					<div class="text-center to-animate col-md-4">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_1_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_1_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_1_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_1_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_1_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_1_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+					<div class="text-center to-animate col-md-4">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_2_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_2_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_2_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_2_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_2_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_2_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+					<div class="text-center to-animate col-md-4">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_3_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_3_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_3_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_3_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_3_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_3_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+				</div>
+				<!--@else if($layout_info->section1_sub2_count == 4)-->
+				<div class="row">
+					<div class="text-center to-animate col-md-3">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_1_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_1_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_1_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_1_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_1_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_1_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+					<div class="text-center to-animate col-md-3">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_2_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_2_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_2_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_2_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_2_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_2_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+					<div class="text-center to-animate col-md-3">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_3_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_3_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_3_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_3_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_3_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_3_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+					<div class="text-center to-animate col-md-3">
+						<div class="person">
+							<!--@if(!$layout_info->section1_sub2_4_image)-->
+							<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
+							<!--@else-->
+							<img src="{$layout_info->section1_sub2_4_image}" class="img-responsive img-rounded" alt="{$layout_info->section1_sub2_4_title}">
+							<!--@end-->
+							<h3 class="name">{$layout_info->section1_sub2_4_title}</h3>
+							<div class="position">{$layout_info->section1_sub2_4_sub_title}</div>
+							<p>
+								{nl2br($layout_info->section1_sub2_4_content)}
+							</p>
+							<!-- 추후 사용 예정 --
+							<ul class="social social-circle">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+							/.추후 사용 예정 -->
+						</div>
+					</div>
+				</div>
+				<!--@end-->
+			</div>
+		</div>
+	</div>
+</div>
+<div cond="$layout_info->use_section2 === 'Y'" id="fh5co-our-services" data-section="section2">
+	<div class="container">
+		<div class="row row-bottom-padded-sm">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="to-animate">{$layout_info->section2_title}</h2>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 to-animate">
+						<h3>
+							{nl2br($layout_info->section2_content)}
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="box to-animate">
+					<div class="icon" style="background-color: {$layout_info->section2_sub1_icon_bgcolor};">
+						<span style="color: {$layout_info->section2_sub1_icon_color};">
+							<i class="{$layout_info->section2_sub1_icon}"></i>
+						</span>
+					</div>
+					<h3>{$layout_info->section2_sub1_title}</h3>
+					<p>
+						{nl2br($layout_info->section2_sub1_content)}
+					</p>
+				</div>
+				<!--@if($layout_info->section2_count == 6)-->
+				<div class="box to-animate">
+					<div class="icon" style="background-color: {$layout_info->section2_sub4_icon_bgcolor};">
+						<span style="color: {$layout_info->section2_sub4_icon_color};">
+							<i class="{$layout_info->section2_sub4_icon}"></i>
+						</span>
+					</div>
+					<h3>{$layout_info->section2_sub4_title}</h3>
+					<p>
+						{nl2br($layout_info->section2_sub4_content)}
+					</p>
+				</div>
+				<!--@end-->
+			</div>
+			<div class="col-md-4">
+				<div class="box to-animate">
+					<div class="icon" style="background-color: {$layout_info->section2_sub2_icon_bgcolor};">
+						<span style="color: {$layout_info->section2_sub2_icon_color};">
+							<i class="{$layout_info->section2_sub2_icon}"></i>
+						</span>
+					</div>
+					<h3>{$layout_info->section2_sub2_title}</h3>
+					<p>
+						{nl2br($layout_info->section2_sub2_content)}
+					</p>
+				</div>
+				<!--@if($layout_info->section2_count == 6)-->
+				<div class="box to-animate">
+					<div class="icon" style="background-color: {$layout_info->section2_sub5_icon_bgcolor};">
+						<span style="color: {$layout_info->section2_sub5_icon_color};">
+							<i class="{$layout_info->section2_sub5_icon}"></i>
+						</span>
+					</div>
+					<h3>{$layout_info->section2_sub5_title}</h3>
+					<p>
+						{nl2br($layout_info->section2_sub5_content)}
+					</p>
+				</div>
+				<!--@end-->
+			</div>
+			<div class="col-md-4">
+				<div class="box to-animate">
+					<div class="icon" style="background-color: {$layout_info->section2_sub3_icon_bgcolor};">
+						<span style="color: {$layout_info->section2_sub3_icon_color};">
+							<i class="{$layout_info->section2_sub3_icon}"></i>
+						</span>
+					</div>
+					<h3>{$layout_info->section2_sub3_title}</h3>
+					<p>
+						{nl2br($layout_info->section2_sub3_content)}
+					</p>
+				</div>
+				<!--@if($layout_info->section2_count == 6)-->
+				<div class="box to-animate">
+					<div class="icon" style="background-color: {$layout_info->section2_sub6_icon_bgcolor};">
+						<span style="color: {$layout_info->section2_sub6_icon_color};">
+							<i class="{$layout_info->section2_sub6_icon}"></i>
+						</span>
+					</div>
+					<h3>{$layout_info->section2_sub6_title}</h3>
+					<p>
+						{nl2br($layout_info->section2_sub6_content)}
+					</p>
+				</div>
+				<!--@end-->
+			</div>
+
+		</div>
+	</div>
+</div>
+<div cond="$layout_info->use_section3 === 'Y'" id="fh5co-features" data-section="section3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="single-animate animate-features-1">Features</h2>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
+						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-bottom-padded-sm">
+			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="icon-present"></i></div>
+				<div class="fh5co-desc">
+					<h3>100% Free</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="icon-eye"></i></div>
+				<div class="fh5co-desc">
+					<h3>Retina Ready</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				</div>
+			</div>
+			<div class="clearfix visible-sm-block visible-xs-block"></div>
+			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="icon-crop"></i></div>
+				<div class="fh5co-desc">
+					<h3>Fully Responsive</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="icon-speedometer"></i></div>
+				<div class="fh5co-desc">
+					<h3>Lightweight</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				</div>
+			</div>
+			<div class="clearfix visible-sm-block visible-xs-block"></div>
+			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="icon-heart"></i></div>
+				<div class="fh5co-desc">
+					<h3>Made with Love</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+				<div class="fh5co-icon"><i class="icon-umbrella"></i></div>
+				<div class="fh5co-desc">
+					<h3>Eco Friendly</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				</div>
+			</div>
+			<div class="clearfix visible-sm-block visible-xs-block"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
+				<a href="#" class="btn btn-primary btn-block">Learn More</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div cond="$layout_info->use_section4 === 'Y'" id="fh5co-testimonials" data-section="section4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="to-animate">Happy Clients Says...</h2>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 subtext to-animate">
+						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="box-testimony to-animate">
+					<blockquote>
+						<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+						<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+					</blockquote>
+					<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+				</div>
+
+			</div>
+			<div class="col-md-4">
+				<div class="box-testimony to-animate">
+					<blockquote>
+						<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+						<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
+					</blockquote>
+					<p class="author">John Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+				</div>
+
+
+			</div>
+			<div class="col-md-4">
+				<div class="box-testimony to-animate">
+					<blockquote>
+						<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+						<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+					</blockquote>
+					<p class="author">John Doe, Founder <a href="#">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div cond="$layout_info->use_section5 === 'Y'" id="fh5co-pricing" data-section="section5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="single-animate animate-pricing-1">Pricing</h2>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
+						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="price-box to-animate">
+					<h2 class="pricing-plan">Starter</h2>
+					<div class="price"><sup class="currency">$</sup>7<small>/mo</small></div>
+					<p>Basic customer support for small business</p>
+					<hr>
+					<ul class="pricing-info">
+						<li>10 projects</li>
+						<li>20 Pages</li>
+						<li>20 Emails</li>
+						<li>100 Images</li>
+					</ul>
+					<a href="#" class="btn btn-default btn-sm">Get started</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="price-box to-animate">
+					<h2 class="pricing-plan">Regular</h2>
+					<div class="price"><sup class="currency">$</sup>19<small>/mo</small></div>
+					<p>Basic customer support for small business</p>
+					<hr>
+					<ul class="pricing-info">
+						<li>15 projects</li>
+						<li>40 Pages</li>
+						<li>40 Emails</li>
+						<li>200 Images</li>
+					</ul>
+					<a href="#" class="btn btn-default btn-sm">Get started</a>
+				</div>
+			</div>
+			<div class="clearfix visible-sm-block"></div>
+			<div class="col-md-3 col-sm-6 to-animate">
+				<div class="price-box popular">
+					<div class="popular-text">Best value</div>
+					<h2 class="pricing-plan">Plus</h2>
+					<div class="price"><sup class="currency">$</sup>79<small>/mo</small></div>
+					<p>Basic customer support for small business</p>
+					<hr>
+					<ul class="pricing-info">
+						<li>Unlimitted projects</li>
+						<li>100 Pages</li>
+						<li>100 Emails</li>
+						<li>700 Images</li>
+					</ul>
+					<a href="#" class="btn btn-primary btn-sm">Get started</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="price-box to-animate">
+					<h2 class="pricing-plan">Enterprise</h2>
+					<div class="price"><sup class="currency">$</sup>125<small>/mo</small></div>
+					<p>Basic customer support for small business</p>
+					<hr>
+					<ul class="pricing-info">
+						<li>Unlimitted projects</li>
+						<li>Unlimitted Pages</li>
+						<li>Unlimitted Emails</li>
+						<li>Unlimitted Images</li>
+					</ul>
+					<a href="#" class="btn btn-default btn-sm">Get started</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div cond="$layout_info->use_section6 === 'Y'" id="fh5co-press" data-section="section6">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="single-animate animate-press-1">Press Releases</h2>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 subtext single-animate animate-press-2">
+						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<!-- Press Item -->
+				<div class="fh5co-press-item to-animate">
+					<div class="fh5co-press-img" style="background-image: url(images/img_7.jpg)">
+					</div>
+					<div class="fh5co-press-text">
+						<h3 class="h2 fh5co-press-title">Simplicity <span class="fh5co-border"></span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
+						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+					</div>
+				</div>
+				<!-- Press Item -->
+			</div>
+
+			<div class="col-md-6">
+				<!-- Press Item -->
+				<div class="fh5co-press-item to-animate">
+					<div class="fh5co-press-img" style="background-image: url(images/img_8.jpg)">
+					</div>
+					<div class="fh5co-press-text">
+						<h3 class="h2 fh5co-press-title">Versatile <span class="fh5co-border"></span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
+						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+					</div>
+				</div>
+				<!-- Press Item -->
+			</div>
+
+			<div class="col-md-6">
+				<!-- Press Item -->
+				<div class="fh5co-press-item to-animate">
+					<div class="fh5co-press-img" style="background-image: url(images/img_9.jpg);">
+					</div>
+					<div class="fh5co-press-text">
+						<h3 class="h2 fh5co-press-title">Aesthetic <span class="fh5co-border"></span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
+						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+					</div>
+				</div>
+				<!-- Press Item -->
+			</div>
+
+			<div class="col-md-6">
+				<!-- Press Item -->
+				<div class="fh5co-press-item to-animate">
+					<div class="fh5co-press-img" style="background-image: url(images/img_10.jpg);">
+					</div>
+					<div class="fh5co-press-text">
+						<h3 class="h2 fh5co-press-title">Creative <span class="fh5co-border"></span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
+						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+					</div>
+				</div>
+				<!-- Press Item -->
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<footer id="footer" role="contentinfo">
+	<div class="container">
+		<div class="row row-bottom-padded-sm">
+			<div class="col-md-12">
+				<p class="copyright text-center">&copy; 2015 Free <a href="index.html">Crew</a>. All Rights Reserved. <br> Free HTML5 Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> | Images by <a href="http://pexels.com/" target="_blank">Pexels</a> &amp;  <a href="http://unsplash.com/" target="_blank">Unsplash</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<ul class="social social-circle">
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-youtube"></i></a></li>
+					<li><a href="#"><i class="icon-pinterest"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-dribbble"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">
+					{$lang->cmd_login}
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form action="{getUrl()}" method="post" autocomplete="off">
+					<input type="hidden" name="act" value="procMemberLogin" />
+					<input type="hidden" name="success_return_url" value="{htmlspecialchars(getRequestUriByServerEnviroment(), ENT_COMPAT | ENT_HTML401, 'UTF-8', FALSE)}" />
+					<input type="hidden" name="xe_validator_id" value="layouts/xe_kimtajo_layout3/layout/1" />
+					<fieldset>
+						<div class="control-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="xi-user"></i>
+								</div>
+								<input type="text" class="form-control" placeholder="{$lang->user_id}" name="user_id" id="uemail" required="true" />
+							</div>
+							<div class="input-group margin_top_10px">
+								<div class="input-group-addon">
+									<i class="xi-lock"></i>
+								</div>
+								<input type="password" class="form-control" placeholder="{$lang->password}" name="password" id="upw" required="true" />
+							</div>
+						</div>
+						<div class="col-md-offset-1 checkbox">
+							<label class="chk_label" for="keepid_opt">
+								<input type="checkbox" name="keep_signed" id="keepid_opt" /> {$lang->keep_signed}
+							</label>
+							<div id="warning">
+								<p>{str_replace('\n\n', '<br />', $lang->about_keep_signed)}</p>
+								<div class="edge"></div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary btn_submit col-sm-12">{$lang->cmd_login}</button>
+
+						<div cond="$XE_VALIDATOR_ID == 'layouts/xe_kimtajo_layout3/layout/1' && $XE_VALIDATOR_MESSAGE" class="control-group">
+							<p class="error">{$XE_VALIDATOR_MESSAGE}</p>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.Login Modal -->
+
+<script cond="($XE_VALIDATOR_ID == 'layouts/xe_kimtajo_layout3/layout/1' && $XE_VALIDATOR_MESSAGE) || ( $act == 'dispMemberLoginForm' && !$is_logged)">
+	jQuery(function () {
+		jQuery('#loginModal').modal('show');
+
+	});
+</script>
+
+<script>
+	$(function() {
+		$('.dropdown-toggle').dropdown();
+
+	});
+</script>
+<!-- Button trigger modal -->
+
+<!--
+<div class="user_layout">
+	<div class="header">
+		<h1>Site Logo</h1>
+		<form action="{getUrl()}" method="get" class="search">
+			<input type="hidden" name="vid" value="{$vid}" />
+			<input type="hidden" name="mid" value="{$mid}" />
+			<input type="hidden" name="act" value="IS" />
+			<input type="text" name="is_keyword" value="{$is_keyword}" title="{$lang->cmd_search}" />
+			<input type="submit" value="{$lang->cmd_search}" />
+		</form>
+		<hr />
+		<div class="gnb">
+			.gnb
+			<ul>
+				<li loop="$global_menu->list=>$key1,$val1" class="active"|cond="$val1['selected']"><a href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'">{$val1['link']}</a>
+					<ul cond="$val1['list']">
+						<li loop="$val1['list']=>$key2,$val2" class="active"|cond="$val2['selected']"><a href="{$val2['href']}" target="_blank"|cond="$val2['open_window']=='Y'">{$val2['link']}</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<hr />
+	<div class="body">
+		<div class="lnb">
+			<div class="account">
+				<img widget="login_info" skin="xe_official" />
+			</div>
+			<hr />
+			.lnb
+			<h2 loop="$global_menu->list=>$key1,$val1" cond="$val1['selected']"><a href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'">{$val1['link']}</a></h2>
+			<ul loop="$global_menu->list=>$key1,$val1" cond="$val1['selected'] && $val1['list']">
+				<li loop="$val1['list']=>$key2,$val2" class="active"|cond="$val2['selected']"><a href="{$val2['href']}" target="_blank"|cond="$val2['open_window']=='Y'">{$val2['link']}</a>
+					<ul cond="$val2['list']">
+						<li loop="$val2['list']=>$key3,$val3" class="active"|cond="$val3['selected']"><a href="{$val3['href']}" target="_blank"|cond="$val3['open_window']=='Y'">{$val3['link']}</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<hr />
+		<div class="content">.content{$content}</div>
+	</div>
+	<hr />
+	<div class="footer">.footer</div>
+</div>
+-->
