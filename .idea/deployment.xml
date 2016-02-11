@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="test server" preserveTimestamps="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="cpod server" preserveTimestamps="false">
     <serverData>
+      <paths name="cpod server">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/layouts/kimtajo_reponsive_one_page" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="test server">
         <serverdata>
           <mappings>
-            <mapping deploy="/xe/layouts/kimtajo_responsive_one_page" local="$PROJECT_DIR$/../kimtajo_responsive_one_page" web="/xe" />
+            <mapping deploy="/xe/layouts/kimtajo_responsive_one_page" local="$PROJECT_DIR$" web="/xe" />
           </mappings>
         </serverdata>
       </paths>
