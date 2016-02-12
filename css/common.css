@@ -71,3 +71,7 @@ button.btn{
 .fh5co-press-item{
     background-size: cover !important;
 }
+
+#fh5co-pricing .price-box{
+    font-size: 13px;
+}

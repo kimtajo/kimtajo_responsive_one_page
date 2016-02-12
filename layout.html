@@ -271,7 +271,7 @@
 	<block cond="!$layout_info->section5_title">{@ $layout_info->section5_title = '섹션 5 제목'}</block>
 	<block cond="!$layout_info->section5_content">{@ $layout_info->section5_content = '섹션 5의 내용을 입력합니다.'}</block>
 	<block cond="!$layout_info->section5_count">{@ $layout_info->section5_count = 4}</block>
-	<block cond="!$layout_info->section5_grade1_popular">{@ $layout_info->section5_grade1_popular = 3}</block>
+	<block cond="!$layout_info->section5_grade_popular">{@ $layout_info->section5_grade_popular = 3}</block>
 	<block cond="!$layout_info->section5_popular_name">{@ $layout_info->section5_popular_name = '추천'}</block>
 
 	<block cond="!$layout_info->section5_grade1_name">{@ $layout_info->section5_grade1_name = '등급 1'}</block>
@@ -432,7 +432,11 @@
 					<!-- 로그인 메뉴 -->
 					<li>
 						<a id="user_info" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-							<i class="icon-user"></i>
+							<!--@if(!$is_logged)-->
+								<i class="icon-user"></i>
+							<!--@else-->
+								<i class="xi-cog"></i>
+							<!--@end-->
 						</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="user_info">
 								<!--@if(!$is_logged)-->
@@ -1234,7 +1238,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2 class="to-animate">{$layout_info->section4_top_title}</h2>
+				<h2 class="to-animate">{$layout_info->section4_title}</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
 						<h3>{$layout_info->section4_content}</h3>
@@ -1336,7 +1340,7 @@
 			<!--@if($layout_info->section5_count == 4)-->
 			<div class="col-md-3 col-sm-6">
 				<div id="grade1" class="price-box to-animate">
-					<div class="popular-text" cond="$layout_info->section5_grade1_popular == 1">{$layout_info->section5_popular_name}</div>
+					<div class="popular-text" cond="$layout_info->section5_grade_popular == 1">{$layout_info->section5_popular_name}</div>
 					<h2 class="pricing-plan">{$layout_info->section5_grade1_name}</h2>
 					<div class="price">
 						<sup class="currency"><i class="{$layout_info->section5_grade1_money_type}"></i> </sup>{number_format($layout_info->section5_grade1_money)}<small>/{$layout_info->section5_grade1_pay_type}</small>
@@ -1353,7 +1357,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div id="grade2" class="price-box to-animate">
-					<div class="popular-text" cond="$layout_info->section5_grade2_popular == 1">{$layout_info->section5_popular_name}</div>
+					<div class="popular-text" cond="$layout_info->section5_grade_popular == 2">{$layout_info->section5_popular_name}</div>
 					<h2 class="pricing-plan">{$layout_info->section5_grade2_name}</h2>
 					<div class="price">
 						<sup class="currency"><i class="{$layout_info->section5_grade2_money_type}"></i> </sup>{number_format($layout_info->section5_grade2_money)}<small>/{$layout_info->section5_grade2_pay_type}</small>
@@ -1370,7 +1374,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6 to-animate">
 				<div id="grade3" class="price-box">
-					<div class="popular-text" cond="$layout_info->section5_grade3_popular == 1">{$layout_info->section5_popular_name}</div>
+					<div class="popular-text" cond="$layout_info->section5_grade_popular == 3">{$layout_info->section5_popular_name}</div>
 					<h2 class="pricing-plan">{$layout_info->section5_grade3_name}</h2>
 					<div class="price">
 						<sup class="currency"><i class="{$layout_info->section5_grade3_money_type}"></i> </sup>{number_format($layout_info->section5_grade3_money)}<small>/{$layout_info->section5_grade3_pay_type}</small>
@@ -1387,7 +1391,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div id="grade4" class="price-box to-animate">
-					<div class="popular-text" cond="$layout_info->section5_grade4_popular == 1">{$layout_info->section5_popular_name}</div>
+					<div class="popular-text" cond="$layout_info->section5_grade_popular == 4">{$layout_info->section5_popular_name}</div>
 					<h2 class="pricing-plan">{$layout_info->section5_grade4_name}</h2>
 					<div class="price">
 						<sup class="currency"><i class="{$layout_info->section5_grade4_money_type}"></i> </sup>{number_format($layout_info->section5_grade4_money)}<small>/{$layout_info->section5_grade4_pay_type}</small>
@@ -1620,7 +1624,7 @@
 
 <script>
 	jQuery(function() {
-		jQuery('#grade{$layout_info->section5_grade1_popular}').addClass('popular');
+		jQuery('#grade{$layout_info->section5_grade_popular}').addClass('popular');
 	});
 </script>
 

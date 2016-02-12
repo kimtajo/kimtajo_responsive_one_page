@@ -1042,13 +1042,21 @@
                 </options>
             </var>
 
-            <var name="section5_grade1_popular" type="select">
+            <var name="section5_grade_popular" type="select">
                 <title xml:lang="ko">강조 등급 선택 여부</title>
                 <description xml:lang="ko">강조 등급을 선택합니다.(기본값: 등급 3)</description>
-                <options value="1">등급 1</options>
-                <options value="2">등급 2</options>
-                <options value="3">등급 3</options>
-                <options value="4">등급 4</options>
+                <options value="1">
+                    <title xml:lang="ko">등급 1</title>
+                </options>
+                <options value="2">
+                    <title xml:lang="ko">등급 2</title>
+                </options>
+                <options value="3">
+                    <title xml:lang="ko">등급 3</title>
+                </options>
+                <options value="4">
+                    <title xml:lang="ko">등급 4</title>
+                </options>
             </var>
             <var name="section5_popular_name" type="text">
                 <title xml:lang="ko">강조 문구</title>

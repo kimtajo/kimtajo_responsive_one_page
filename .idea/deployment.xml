@@ -5,7 +5,7 @@
       <paths name="cpod server">
         <serverdata>
           <mappings>
-            <mapping deploy="/layouts/kimtajo_reponsive_one_page" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/xe/layouts/kimtajo_responsive_one_page" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
