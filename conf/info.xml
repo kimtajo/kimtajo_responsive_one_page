@@ -1239,100 +1239,86 @@
 
             <var name="section6_count" type="select">
                 <title xml:lang="ko">섹션 6 갯수</title>
-                <options value="4">
-                    <title xml:lang="ko">4개</title>
+                <options value="3">
+                    <title xml:lang="ko">3개</title>
                 </options>
-                <options value="2">
-                    <title xml:lang="ko">2개</title>
+                <options value="6">
+                    <title xml:lang="ko">6개</title>
                 </options>
+            </var>
+
+
+            <var name="section6_title" type="text">
+                <title xml:lang="ko">섹션 6 제목</title>
+                <description xml:lang="ko">섹션 6 제목을 입력합니다.</description>
+            </var>
+            <var name="section6_content" type="textarea">
+                <title xml:lang="ko">섹션 6 부제목</title>
+                <description xml:lang="ko">섹션 6 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
             </var>
 
             <var name="section6_sub1_title" type="text">
                 <title xml:lang="ko">서브 1 제목</title>
             </var>
-            <var name="section6_sub1_text" type="textarea">
-                <title xml:lang="ko">서브 1 내용</title>
+            <var name="section6_sub1_text" type="text">
+                <title xml:lang="ko">서브 1 부제목</title>
             </var>
             <var name="section6_sub1_image" type="image">
                 <title xml:lang="ko">서브 1 이미지</title>
-            </var>
-            <var name="use_section6_sub1_button" type="select">
-                <title xml:lang="ko">서브 1 버튼 사용 여부</title>
-                <options value="Y">
-                    <title xml:lang="ko">사용함</title>
-                </options>
-                <options value="N">
-                    <title xml:lang="ko">사용 안함</title>
-                </options>
-            </var>
-            <var name="section6_sub1_button_name" type="text">
-                <title xml:lang="ko">서브 1 버튼 이름</title>
-            </var>
-            <var name="section6_sub1_button_link" type="text">
-                <title xml:lang="ko">서브 1 버튼 링크</title>
             </var>
 
             <var name="section6_sub2_title" type="text">
                 <title xml:lang="ko">서브 2 제목</title>
             </var>
-            <var name="section6_sub2_text" type="textarea">
-                <title xml:lang="ko">서브 2 내용</title>
+            <var name="section6_sub2_text" type="text">
+                <title xml:lang="ko">서브 2 부제목</title>
             </var>
             <var name="section6_sub2_image" type="image">
                 <title xml:lang="ko">서브 2 이미지</title>
-            </var>
-            <var name="use_section6_sub2_button" type="select">
-                <title xml:lang="ko">서브 2 버튼 사용 여부</title>
-                <options value="Y">
-                    <title xml:lang="ko">사용함</title>
-                </options>
-                <options value="N">
-                    <title xml:lang="ko">사용 안함</title>
-                </options>
-            </var>
-            <var name="section6_sub2_button_name" type="text">
-                <title xml:lang="ko">서브 2 버튼 이름</title>
-            </var>
-            <var name="section6_sub2_button_link" type="text">
-                <title xml:lang="ko">서브 2 버튼 링크</title>
             </var>
 
             <var name="section6_sub3_title" type="text">
                 <title xml:lang="ko">서브 3 제목</title>
             </var>
-            <var name="section6_sub3_text" type="textarea">
-                <title xml:lang="ko">서브 3 내용</title>
+            <var name="section6_sub3_text" type="text">
+                <title xml:lang="ko">서브 3 부제목</title>
             </var>
             <var name="section6_sub3_image" type="image">
                 <title xml:lang="ko">서브 3 이미지</title>
-            </var>
-            <var name="use_section6_sub3_button" type="select">
-                <title xml:lang="ko">서브 3 버튼 사용 여부</title>
-                <options value="Y">
-                    <title xml:lang="ko">사용함</title>
-                </options>
-                <options value="N">
-                    <title xml:lang="ko">사용 안함</title>
-                </options>
-            </var>
-            <var name="section6_sub3_button_name" type="text">
-                <title xml:lang="ko">서브 3 버튼 이름</title>
-            </var>
-            <var name="section6_sub3_button_link" type="text">
-                <title xml:lang="ko">서브 3 버튼 링크</title>
             </var>
 
             <var name="section6_sub4_title" type="text">
                 <title xml:lang="ko">서브 4 제목</title>
             </var>
-            <var name="section6_sub4_text" type="textarea">
-                <title xml:lang="ko">서브 4 내용</title>
+            <var name="section6_sub4_text" type="text">
+                <title xml:lang="ko">서브 4 부제목</title>
             </var>
             <var name="section6_sub4_image" type="image">
                 <title xml:lang="ko">서브 4 이미지</title>
             </var>
-            <var name="use_section6_sub4_button" type="select">
-                <title xml:lang="ko">서브 4 버튼 사용 여부</title>
+
+            <var name="section6_sub5_title" type="text">
+                <title xml:lang="ko">서브 5 제목</title>
+            </var>
+            <var name="section6_sub5_text" type="text">
+                <title xml:lang="ko">서브 5 부제목</title>
+            </var>
+            <var name="section6_sub5_image" type="image">
+                <title xml:lang="ko">서브 5 이미지</title>
+            </var>
+
+            <var name="section6_sub6_title" type="text">
+                <title xml:lang="ko">서브 6 제목</title>
+            </var>
+            <var name="section6_sub6_text" type="text">
+                <title xml:lang="ko">서브 6 부제목</title>
+            </var>
+            <var name="section6_sub6_image" type="image">
+                <title xml:lang="ko">서브 6 이미지</title>
+            </var>
+
+            <var name="use_section6_button" type="select">
+                <title xml:lang="ko">버튼 사용 여부</title>
                 <options value="Y">
                     <title xml:lang="ko">사용함</title>
                 </options>
@@ -1340,13 +1326,12 @@
                     <title xml:lang="ko">사용 안함</title>
                 </options>
             </var>
-            <var name="section6_sub4_button_name" type="text">
-                <title xml:lang="ko">서브 4 버튼 이름</title>
+            <var name="section6_button_name" type="text">
+                <title xml:lang="ko">섹션 3 버튼 이름</title>
             </var>
-            <var name="section6_sub4_button_link" type="text">
-                <title xml:lang="ko">서브 4 버튼 링크</title>
+            <var name="section6_button_link" type="text">
+                <title xml:lang="ko">섹션 3 링크</title>
             </var>
-
         </group>
         <group>
             <title xml:lang="ko">Footer</title>

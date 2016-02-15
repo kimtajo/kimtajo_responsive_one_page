@@ -5,6 +5,7 @@
 <load target="css/simple-line-icons.css" />
 <load target="css/owl.carousel.min.css" />
 <load target="css/owl.theme.default.min.css" />
+<load target="css/magnific-popup.css" />
 <load target="css/style.css" />
 <load target="../../common/xeicon/xeicon.min.css" />
 <load target="css/font-awesome.min.css" />
@@ -23,6 +24,8 @@
 <load type="body" target="js/bootstrap.min.js" />
 <load type="body" target="js/jquery.waypoints.min.js" />
 <load type="body" target="js/owl.carousel.min.js" />
+<load type="body" target="js/jquery.magnific-popup.min.js" />
+<load type="body" target="js/magnific-popup-options.js" />
 <load type="body" target="js/main.js" />
 
 
@@ -332,40 +335,45 @@
 </block>
 <!-- /.Section 5 -->
 
-<!-- Section 6(보류) -->
+<!-- Section 6 -->
 <block cond="$layout_info->use_section6 == 'Y'">
 	<!-- Navbar Title -->
 	<block cond="!$layout_info->section6_top_title">{@ $layout_info->section6_top_title = '섹션 6'}</block>
 	<!-- /.Navbar Title -->
 
-	<block cond="!$layout_info->section6_count">{@ $layout_info->section6_count = 4}</block>
+	<block cond="!$layout_info->section6_count">{@ $layout_info->section6_count = 6}</block>
+
+	<block cond="!$layout_info->section6_title">{@ $layout_info->section6_title = '섹션 6'}</block>
+	<block cond="!$layout_info->section6_content">{@ $layout_info->section6_content = '섹션 6 내용을 입력합니다.'}</block>
 
 
 	<block cond="!$layout_info->section6_sub1_title">{@ $layout_info->section6_sub1_title = '섹션 6 서브 1'}</block>
-	<block cond="!$layout_info->section6_sub1_text">{@ $layout_info->section6_sub1_text = '섹션 6 서브 1의 내용을 길게길게 입력합니다.'}</block>
-	<block cond="!$layout_info->use_section6_sub1_button">{@ $layout_info->use_section6_sub1_button = 'Y'}</block>
-	<block cond="!$layout_info->section6_sub1_button_name">{@ $layout_info->section6_sub1_button_name = '버튼'}</block>
-	<block cond="!$layout_info->section6_sub1_button_link">{@ $layout_info->section6_sub1_button_link = '#'}</block>
+	<block cond="!$layout_info->section6_sub1_text">{@ $layout_info->section6_sub1_text = '섹션 6 서브 1 부제목'}</block>
+	<block cond="!$layout_info->section6_sub1_image">{@ $layout_info->section6_sub1_image = $layout_info->path.'images/work_1.jpg'}</block>
 
 	<block cond="!$layout_info->section6_sub2_title">{@ $layout_info->section6_sub2_title = '섹션 6 서브 2'}</block>
-	<block cond="!$layout_info->section6_sub2_text">{@ $layout_info->section6_sub2_text = '섹션 6 서브 2의 내용을 입력합니다.'}</block>
-	<block cond="!$layout_info->use_section6_sub2_button">{@ $layout_info->use_section6_sub2_button = 'Y'}</block>
-	<block cond="!$layout_info->section6_sub2_button_name">{@ $layout_info->section6_sub2_button_name = '버튼'}</block>
-	<block cond="!$layout_info->section6_sub2_button_link">{@ $layout_info->section6_sub2_button_link = '#'}</block>
+	<block cond="!$layout_info->section6_sub2_text">{@ $layout_info->section6_sub2_text = '섹션 6 서브 2 부제목'}</block>
+	<block cond="!$layout_info->section6_sub2_image">{@ $layout_info->section6_sub2_image = $layout_info->path.'images/work_2.jpg'}</block>
 
 	<block cond="!$layout_info->section6_sub3_title">{@ $layout_info->section6_sub3_title = '섹션 6 서브 3'}</block>
-	<block cond="!$layout_info->section6_sub3_text">{@ $layout_info->section6_sub3_text = '섹션 6 서브 3의 내용을 입력합니다.'}</block>
-	<block cond="!$layout_info->use_section6_sub3_button">{@ $layout_info->use_section6_sub3_button = 'Y'}</block>
-	<block cond="!$layout_info->section6_sub3_button_name">{@ $layout_info->section6_sub3_button_name = '버튼'}</block>
-	<block cond="!$layout_info->section6_sub3_button_link">{@ $layout_info->section6_sub3_button_link = '#'}</block>
+	<block cond="!$layout_info->section6_sub3_text">{@ $layout_info->section6_sub3_text = '섹션 6 서브 3 부제목'}</block>
+	<block cond="!$layout_info->section6_sub3_image">{@ $layout_info->section6_sub3_image = $layout_info->path.'images/work_3.jpg'}</block>
 
 	<block cond="!$layout_info->section6_sub4_title">{@ $layout_info->section6_sub4_title = '섹션 6 서브 4'}</block>
-	<block cond="!$layout_info->section6_sub4_text">{@ $layout_info->section6_sub4_text = '섹션 6 서브 4의 내용을 입력합니다.'}</block>
-	<block cond="!$layout_info->use_section6_sub4_button">{@ $layout_info->use_section6_sub4_button = 'Y'}</block>
-	<block cond="!$layout_info->section6_sub4_button_name">{@ $layout_info->section6_sub4_button_name = '버튼'}</block>
-	<block cond="!$layout_info->section6_sub4_button_link">{@ $layout_info->section6_sub4_button_link = '#'}</block>
+	<block cond="!$layout_info->section6_sub4_text">{@ $layout_info->section6_sub4_text = '섹션 6 서브 4 부제목'}</block>
+	<block cond="!$layout_info->section6_sub4_image">{@ $layout_info->section6_sub4_image = $layout_info->path.'images/work_4.jpg'}</block>
 
+	<block cond="!$layout_info->section6_sub5_title">{@ $layout_info->section6_sub5_title = '섹션 6 서브 5'}</block>
+	<block cond="!$layout_info->section6_sub5_text">{@ $layout_info->section6_sub5_text = '섹션 6 서브 5 부제목'}</block>
+	<block cond="!$layout_info->section6_sub5_image">{@ $layout_info->section6_sub5_image = $layout_info->path.'images/work_5.jpg'}</block>
 
+	<block cond="!$layout_info->section6_sub6_title">{@ $layout_info->section6_sub6_title = '섹션 6 서브 6'}</block>
+	<block cond="!$layout_info->section6_sub6_text">{@ $layout_info->section6_sub6_text = '섹션 6 서브 6 부제목'}</block>
+	<block cond="!$layout_info->section6_sub6_image">{@ $layout_info->section6_sub6_image = $layout_info->path.'images/work_6.jpg'}</block>
+
+	<block cond="!$layout_info->use_section6_button">{@ $layout_info->use_section6_button = 'Y'}</block>
+	<block cond="!$layout_info->section6_button_name">{@ $layout_info->section6_button_name = '버튼'}</block>
+	<block cond="!$layout_info->section6_button_link">{@ $layout_info->section6_button_link = '#'}</block>
 
 </block>
 <!-- /.Section 6 -->
@@ -1476,80 +1484,88 @@
 		</div>
 	</div>
 </div>
-
-<div cond="$layout_info->use_section6 === 'Y'" id="fh5co-press" data-section="section6">
+<div cond="$layout_info->use_section6 === 'Y'" id="fh5co-work" data-section="section6">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2 class="single-animate animate-press-1">Press Releases</h2>
+				<h2 class="to-animate">{$layout_info->section6_top_title}</h2>
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 subtext single-animate animate-press-2">
-						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+					<div class="col-md-8 col-md-offset-2 subtext to-animate">
+						<h3>
+							{nl2br($layout_info->section6_content)}
+						</h3>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<!-- Press Item -->
-				<div class="fh5co-press-item to-animate">
-					<div cond="!$layout_info->section6_sub1_image" class="fh5co-press-img" style="background-image: url({$layout_info->path}/images/img_8.jpg)" ></div>
-					<div cond="$layout_info->section6_sub1_image" class="fh5co-press-img" style="background-image: url({$layout_info->section6_sub1_image})" ></div>
-					<div class="fh5co-press-text">
-						<h3 class="h2 fh5co-press-title">{$layout_info->section6_sub1_title} <span class="fh5co-border"></span></h3>
-						<p>
-							{nl2br($layout_info->section6_sub1_text)}
-						</p>
-						<p cond="use_section6_sub1_button">
-							<a href="{$layout_info->section6_sub1_button_link}" class="btn btn-primary btn-sm">{$layout_info->section6_sub1_button_name}</a>
-						</p>
+		<div class="row row-bottom-padded-sm">
+			<div class="col-md-4 col-sm-6 col-xxs-12">
+				<a href="{$layout_info->section6_sub1_image}" class="fh5co-project-item image-popup to-animate">
+					<img src="{$layout_info->section6_sub1_image}" alt="Image" class="img-responsive">
+					<div class="fh5co-text">
+						<h2>{$layout_info->section6_sub1_title}</h2>
+						<span>{$layout_info->section6_sub1_text}</span>
 					</div>
-				</div>
-				<!-- Press Item -->
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xxs-12">
+				<a href="{$layout_info->section6_sub2_image}" class="fh5co-project-item image-popup to-animate">
+					<img src="{$layout_info->section6_sub2_image}" alt="Image" class="img-responsive">
+					<div class="fh5co-text">
+						<h2>{$layout_info->section6_sub2_title}</h2>
+						<span>{$layout_info->section6_sub2_text}</span>
+					</div>
+				</a>
 			</div>
 
-			<div class="col-md-6">
-				<!-- Press Item -->
-				<div class="fh5co-press-item to-animate">
-					<div class="fh5co-press-img" style="background-image: url(images/img_8.jpg)">
+			<div class="clearfix visible-sm-block"></div>
+
+			<div class="col-md-4 col-sm-6 col-xxs-12">
+				<a href="{$layout_info->section6_sub3_image}" class="fh5co-project-item image-popup to-animate">
+					<img src="{$layout_info->section6_sub3_image}" alt="Image" class="img-responsive">
+					<div class="fh5co-text">
+						<h2>{$layout_info->section6_sub3_title}</h2>
+						<span>{$layout_info->section6_sub3_text}</span>
 					</div>
-					<div class="fh5co-press-text">
-						<h3 class="h2 fh5co-press-title">Versatile <span class="fh5co-border"></span></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+				</a>
+			</div>
+			<!--@if($layout_info->section6_count == 6)-->
+			<div class="col-md-4 col-sm-6 col-xxs-12">
+				<a href="{$layout_info->section6_sub4_image}" class="fh5co-project-item image-popup to-animate">
+					<img src="{$layout_info->section6_sub4_image}" alt="Image" class="img-responsive">
+					<div class="fh5co-text">
+						<h2>{$layout_info->section6_sub4_title}</h2>
+						<span>{$layout_info->section6_sub4_text}</span>
 					</div>
-				</div>
-				<!-- Press Item -->
+				</a>
 			</div>
 
-			<div class="col-md-6">
-				<!-- Press Item -->
-				<div class="fh5co-press-item to-animate">
-					<div class="fh5co-press-img" style="background-image: url(images/img_9.jpg);">
-					</div>
-					<div class="fh5co-press-text">
-						<h3 class="h2 fh5co-press-title">Aesthetic <span class="fh5co-border"></span></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-					</div>
-				</div>
-				<!-- Press Item -->
-			</div>
+			<div class="clearfix visible-sm-block"></div>
 
-			<div class="col-md-6">
-				<!-- Press Item -->
-				<div class="fh5co-press-item to-animate">
-					<div class="fh5co-press-img" style="background-image: url(images/img_10.jpg);">
+			<div class="col-md-4 col-sm-6 col-xxs-12">
+				<a href="{$layout_info->section6_sub5_image}" class="fh5co-project-item image-popup to-animate">
+					<img src="{$layout_info->section6_sub5_image}" alt="Image" class="img-responsive">
+					<div class="fh5co-text">
+						<h2>{$layout_info->section6_sub5_title}</h2>
+						<span>{$layout_info->section6_sub5_text}</span>
 					</div>
-					<div class="fh5co-press-text">
-						<h3 class="h2 fh5co-press-title">Creative <span class="fh5co-border"></span></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius quos similique suscipit dolorem cumque vitae qui molestias illo accusantium...</p>
-						<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
-					</div>
-				</div>
-				<!-- Press Item -->
+				</a>
 			</div>
-
+			<div class="col-md-4 col-sm-6 col-xxs-12">
+				<a href="{$layout_info->section6_sub6_image}" class="fh5co-project-item image-popup to-animate">
+					<img src="{$layout_info->section6_sub6_image}" alt="Image" class="img-responsive">
+					<div class="fh5co-text">
+						<h2>{$layout_info->section6_sub6_title}</h2>
+						<span>{$layout_info->section6_sub6_text}</span>
+					</div>
+				</a>
+			</div>
+			<!--@end-->
+		</div>
+		<div cond="$layout_info->use_section6_button" class="row">
+			<div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
+				<a href="{$layout_info->section6_button_link}" class="btn btn-primary btn-block">{$layout_info->section6_button_name}</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -1641,54 +1657,3 @@
 		jQuery('#grade{$layout_info->section5_grade_popular}').addClass('popular');
 	});
 </script>
-
-<!-- Button trigger modal -->
-
-<!--
-<div class="user_layout">
-	<div class="header">
-		<h1>Site Logo</h1>
-		<form action="{getUrl()}" method="get" class="search">
-			<input type="hidden" name="vid" value="{$vid}" />
-			<input type="hidden" name="mid" value="{$mid}" />
-			<input type="hidden" name="act" value="IS" />
-			<input type="text" name="is_keyword" value="{$is_keyword}" title="{$lang->cmd_search}" />
-			<input type="submit" value="{$lang->cmd_search}" />
-		</form>
-		<hr />
-		<div class="gnb">
-			.gnb
-			<ul>
-				<li loop="$global_menu->list=>$key1,$val1" class="active"|cond="$val1['selected']"><a href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'">{$val1['link']}</a>
-					<ul cond="$val1['list']">
-						<li loop="$val1['list']=>$key2,$val2" class="active"|cond="$val2['selected']"><a href="{$val2['href']}" target="_blank"|cond="$val2['open_window']=='Y'">{$val2['link']}</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<hr />
-	<div class="body">
-		<div class="lnb">
-			<div class="account">
-				<img widget="login_info" skin="xe_official" />
-			</div>
-			<hr />
-			.lnb
-			<h2 loop="$global_menu->list=>$key1,$val1" cond="$val1['selected']"><a href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'">{$val1['link']}</a></h2>
-			<ul loop="$global_menu->list=>$key1,$val1" cond="$val1['selected'] && $val1['list']">
-				<li loop="$val1['list']=>$key2,$val2" class="active"|cond="$val2['selected']"><a href="{$val2['href']}" target="_blank"|cond="$val2['open_window']=='Y'">{$val2['link']}</a>
-					<ul cond="$val2['list']">
-						<li loop="$val2['list']=>$key3,$val3" class="active"|cond="$val3['selected']"><a href="{$val3['href']}" target="_blank"|cond="$val3['open_window']=='Y'">{$val3['link']}</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<hr />
-		<div class="content">.content{$content}</div>
-	</div>
-	<hr />
-	<div class="footer">.footer</div>
-</div>
--->

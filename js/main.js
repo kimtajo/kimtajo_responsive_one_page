@@ -417,24 +417,25 @@
 	// Pricing
 	var pressAnimate = function() {
 
-		if ( $('#fh5co-press').length > 0 ) {	
-			$('#fh5co-press .to-animate').each(function( k ) {
-				
+		if ( $('#fh5co-work').length > 0 ) {
+			$('#fh5co-work .to-animate').each(function( k ) {
+
 				var el = $(this);
-				
+
 				setTimeout ( function () {
 					el.addClass('fadeInUp animated');
 				},  k * 200, 'easeInOutExpo' );
-				
+
 			});
 		}
 
 	};
+
 	var pressWayPoint = function() {
 
-		if ( $('#fh5co-press').length > 0 ) {
-			$('#fh5co-press').waypoint( function( direction ) {
-										
+		if ( $('#fh5co-work').length > 0 ) {
+			$('#fh5co-work').waypoint( function( direction ) {
+
 					setTimeout(function(){
 						$('.animate-press-1').addClass('animated fadeIn');
 					}, 200);
@@ -442,11 +443,11 @@
 						$('.animate-press-2').addClass('animated fadeIn');
 					}, 300);
 					setTimeout(pressAnimate, 700);
-					
-					
+
+
 					$(this.element).addClass('animated');
-						
-			
+
+
 			} , { offset: '95%' } );
 		}
 
