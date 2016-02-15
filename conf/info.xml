@@ -200,6 +200,7 @@
             </var>
             <var name="slider1_text" type="textarea">
                 <title xml:lang="ko">슬라이더1 내용</title>
+                <description xml:lang="ko">슬라이더1의 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
             </var>
             <var name="use_slider1_button" type="select">
                 <title xml:lang="ko">슬라이더1 버튼 사용 여부</title>
@@ -268,6 +269,7 @@
             </var>
             <var name="slider2_text" type="textarea">
                 <title xml:lang="ko">슬라이더2 내용</title>
+                <description xml:lang="ko">슬라이더2의 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
             </var>
             <var name="use_slider2_button" type="select">
                 <title xml:lang="ko">슬라이더2 버튼 사용 여부</title>
@@ -336,6 +338,7 @@
             </var>
             <var name="slider3_text" type="textarea">
                 <title xml:lang="ko">슬라이더3 내용</title>
+                <description xml:lang="ko">슬라이더3의 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
             </var>
             <var name="use_slider3_button" type="select">
                 <title xml:lang="ko">슬라이더3 버튼 사용 여부</title>
@@ -404,6 +407,7 @@
             </var>
             <var name="slider4_text" type="textarea">
                 <title xml:lang="ko">슬라이더4 내용</title>
+                <description xml:lang="ko">슬라이더4의 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
             </var>
             <var name="use_slider4_button" type="select">
                 <title xml:lang="ko">슬라이더4 버튼 사용 여부</title>
@@ -472,6 +476,7 @@
             </var>
             <var name="slider5_text" type="textarea">
                 <title xml:lang="ko">슬라이더5 내용</title>
+                <description xml:lang="ko">슬라이더5의 내용을 입력합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
             </var>
             <var name="use_slider5_button" type="select">
                 <title xml:lang="ko">슬라이더5 버튼 사용 여부</title>
@@ -1342,6 +1347,27 @@
                 <title xml:lang="ko">서브 4 버튼 링크</title>
             </var>
 
+        </group>
+        <group>
+            <title xml:lang="ko">Footer</title>
+            <var name="copyright" type="textarea">
+                <title xml:lang="ko">Copyright</title>
+                <description xml:lang="ko">사이트 하단의 카피라이트를 입력합니다.</description>
+            </var>
+            <var name="use_social" type="select">
+                <title xml:lang="ko">SNS 버튼 사용</title>
+                <description xml:lang="ko">카피라이트 하단에 SNS 버튼 사용 여부를 선택합니다.(html 태그 적용가능, br 태그는 엔터로 입력)</description>
+                <options value="Y">
+                    <title xml:lang="ko">사용</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">미사용</title>
+                </options>
+            </var>
+            <var name="social_info" type="textarea">
+                <title xml:lang="ko">SNS 정보</title>
+                <description xml:lang="ko">SNS 정보를 입력합니다. 입력 방법은 아이콘모양(XEIcon, Fontawesome 사용 가능)||링크주소(ex. xi-facebook||http://facebook.com) 형식이며, 갯수를 추가하려면 엔터를 쳐주시면 됩니다.</description>
+            </var>
         </group>
     </extra_vars>
 </layout>

@@ -330,7 +330,7 @@
 	<block cond="!$layout_info->section5_grade4_button_name">{@ $layout_info->section5_grade4_button_name = '버튼'}</block>
 	<block cond="!$layout_info->section5_grade4_button_link">{@ $layout_info->section5_grade4_button_link = '#'}</block>
 </block>
-<!-- /.Section 4 -->
+<!-- /.Section 5 -->
 
 <!-- Section 6(보류) -->
 <block cond="$layout_info->use_section6 == 'Y'">
@@ -369,6 +369,20 @@
 
 </block>
 <!-- /.Section 6 -->
+
+<!-- Footer -->
+<block cond="!$layout_info->copyright">{@ $layout_info->copyright = '&copy; 2015 Free <a href="index.html">Crew</a>. All Rights Reserved.
+	Free HTML5 Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> | Images by <a href="http://pexels.com/" target="_blank">Pexels</a> &amp;  <a href="http://unsplash.com/" target="_blank">Unsplash</a>
+	Modify by KimTAJO.</p>'}
+</block>
+<block cond="!$layout_info->use_social">{@ $layout_info->use_social = 'Y'}</block>
+<block cond="$layout_info->use_social == 'Y' && !$layout_info->social_info">
+	{@ $social_data = array('xi-twitter||#', 'xi-facebook||#', 'xi-git||https://github.com/kimtajo/kimtajo_responsive_one_page')}
+</block>
+<block cond="$layout_info->social_info">
+	{@ $social_data = explode("\n", $layout_info->$social_data)}
+</block>
+<!-- /.Footer -->
 
 <!-- 포인트 색상(지정) -->
 <block cond="$layout_info->use_color === 'custom'">
@@ -1544,19 +1558,19 @@
 	<div class="container">
 		<div class="row row-bottom-padded-sm">
 			<div class="col-md-12">
-				<p class="copyright text-center">&copy; 2015 Free <a href="index.html">Crew</a>. All Rights Reserved. <br> Free HTML5 Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> | Images by <a href="http://pexels.com/" target="_blank">Pexels</a> &amp;  <a href="http://unsplash.com/" target="_blank">Unsplash</a></p>
+				<p class="copyright text-center">
+				{nl2br($layout_info->copyright)}
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" cond="$layout_info->use_social == 'Y'">
 			<div class="col-md-12 text-center">
 				<ul class="social social-circle">
-					<li><a href="#"><i class="icon-twitter"></i></a></li>
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
-					<li><a href="#"><i class="icon-youtube"></i></a></li>
-					<li><a href="#"><i class="icon-pinterest"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-dribbble"></i></a></li>
+					<!--@foreach($social_data as $social)-->
+					{@ $split_social = explode("||", $social)}
+					{@ $link = $split_social[1]}
+					{@ $icon = $split_social[0]}
+					<li><a href="{$link}" target="_blank"><i class="{$icon}"></i></a></li>
+					<!--@end-->
 				</ul>
 			</div>
 		</div>
