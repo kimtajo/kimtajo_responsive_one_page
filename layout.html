@@ -27,7 +27,14 @@
 <load type="body" target="js/jquery.magnific-popup.min.js" />
 <load type="body" target="js/magnific-popup-options.js" />
 <load type="body" target="js/main.js" />
-
+<!-- 초기 세팅 -->
+<block cond="!$layout_info->use_section1">{@ $layout_info->use_section1 = 'Y'}</block>
+<block cond="!$layout_info->use_section2">{@ $layout_info->use_section2 = 'Y'}</block>
+<block cond="!$layout_info->use_section3">{@ $layout_info->use_section3 = 'Y'}</block>
+<block cond="!$layout_info->use_section4">{@ $layout_info->use_section4 = 'Y'}</block>
+<block cond="!$layout_info->use_section5">{@ $layout_info->use_section5 = 'Y'}</block>
+<block cond="!$layout_info->use_section6">{@ $layout_info->use_section6 = 'Y'}</block>
+<!-- /.초기 세팅 -->
 
 <!-- 로고 세팅 -->
 <block cond="!$layout_info->logo_type">{@ $layout_info->logo_type = 'text'}</block>
@@ -1161,63 +1168,68 @@
 
 		<div class="row row-bottom-padded-sm">
 			<!--@if($layout_info->section3_count == 6)-->
-			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="{$layout_info->section3_sub1_icon}"></i></div>
-				<div class="fh5co-desc">
-					<h3>{$layout_info->section3_sub1_title}</h3>
-					<p>
-						{nl2br($layout_info->section3_sub1_content)}
-					</p>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="{$layout_info->section3_sub1_icon}"></i></div>
+					<div class="fh5co-desc">
+						<h3>{$layout_info->section3_sub1_title}</h3>
+						<p>
+							{nl2br($layout_info->section3_sub1_content)}
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="{$layout_info->section3_sub2_icon}"></i></div>
+					<div class="fh5co-desc">
+						<h3>{$layout_info->section3_sub2_title}</h3>
+						<p>
+							{nl2br($layout_info->section3_sub2_content)}
+						</p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="{$layout_info->section3_sub3_icon}"></i></div>
+					<div class="fh5co-desc">
+						<h3>{$layout_info->section3_sub3_title}</h3>
+						<p>
+							{nl2br($layout_info->section3_sub3_content)}
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="{$layout_info->section3_sub2_icon}"></i></div>
-				<div class="fh5co-desc">
-					<h3>{$layout_info->section3_sub2_title}</h3>
-					<p>
-						{nl2br($layout_info->section3_sub2_content)}
-					</p>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="{$layout_info->section3_sub4_icon}"></i></div>
+					<div class="fh5co-desc">
+						<h3>{$layout_info->section3_sub4_title}</h3>
+						<p>
+							{nl2br($layout_info->section3_sub4_content)}
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="clearfix visible-sm-block visible-xs-block"></div>
-			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="{$layout_info->section3_sub3_icon}"></i></div>
-				<div class="fh5co-desc">
-					<h3>{$layout_info->section3_sub3_title}</h3>
-					<p>
-						{nl2br($layout_info->section3_sub3_content)}
-					</p>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="{$layout_info->section3_sub5_icon}"></i></div>
+					<div class="fh5co-desc">
+						<h3>{$layout_info->section3_sub5_title}</h3>
+						<p>
+							{nl2br($layout_info->section3_sub5_content)}
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="{$layout_info->section3_sub4_icon}"></i></div>
-				<div class="fh5co-desc">
-					<h3>{$layout_info->section3_sub4_title}</h3>
-					<p>
-						{nl2br($layout_info->section3_sub4_content)}
-					</p>
+				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+					<div class="fh5co-icon"><i class="{$layout_info->section3_sub6_icon}"></i></div>
+					<div class="fh5co-desc">
+						<h3>{$layout_info->section3_sub6_title}</h3>
+						<p>
+							{nl2br($layout_info->section3_sub6_content)}
+						</p>
+					</div>
 				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
 			</div>
-			<div class="clearfix visible-sm-block visible-xs-block"></div>
-			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="{$layout_info->section3_sub5_icon}"></i></div>
-				<div class="fh5co-desc">
-					<h3>{$layout_info->section3_sub5_title}</h3>
-					<p>
-						{nl2br($layout_info->section3_sub5_content)}
-					</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-				<div class="fh5co-icon"><i class="{$layout_info->section3_sub6_icon}"></i></div>
-				<div class="fh5co-desc">
-					<h3>{$layout_info->section3_sub6_title}</h3>
-					<p>
-						{nl2br($layout_info->section3_sub6_content)}
-					</p>
-				</div>
-			</div>
-			<div class="clearfix visible-sm-block visible-xs-block"></div>
+
 			<!--@else-->
 			<div class="col-md-4 col-sm-4 col-xs-12 fh5co-service to-animate">
 				<div class="fh5co-icon"><i class="{$layout_info->section3_sub1_icon}"></i></div>
@@ -1249,7 +1261,7 @@
 			<!--@end-->
 		</div>
 
-		<div cond="$layout_info->use_section3_button" class="row">
+		<div cond="$layout_info->use_section3_button === 'Y'" class="row">
 			<div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
 				<a href="{$layout_info->section3_button_link}" class="btn btn-primary btn-block">{$layout_info->section3_button_name}</a>
 			</div>
@@ -1562,7 +1574,7 @@
 			</div>
 			<!--@end-->
 		</div>
-		<div cond="$layout_info->use_section6_button" class="row">
+		<div cond="$layout_info->use_section6_button === 'Y'" class="row">
 			<div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
 				<a href="{$layout_info->section6_button_link}" class="btn btn-primary btn-block">{$layout_info->section6_button_name}</a>
 			</div>
