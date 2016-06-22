@@ -2,8 +2,8 @@
 <layout version="0.2">
     <title xml:lang="ko">fh5co-crew(Onepage) 레이아웃</title>
     <description xml:lang="ko">fh5co-crew(Onepage) 레이아웃입니다.</description>
-    <version>1.0</version>
-    <date>2016-01-25</date>
+    <version>1.10</version>
+    <date>2016-06-22</date>
     <author email_address="jjrrtt@naver.com" link="">
         <name xml:lang="ko">김타조</name>
         <name xml:lang="en">Tajo Kim</name>
@@ -52,6 +52,15 @@
             <var name="custom_color" type="text">
                 <title xml:lang="ko">포인트 색상(지정)</title>
                 <description xml:lang="ko">포인트 색상을 지정으로 선택하였을 경우, 값을 입력합니다.(# 포함)</description>
+            </var>
+            <var name="use_slide" type="select">
+                <title xml:lang="ko">슬라이드</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용함</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">사용 안함</title>
+                </options>
             </var>
             <var name="use_section1" type="select">
                 <title xml:lang="ko">Section 1</title>
@@ -136,6 +145,9 @@
             <title xml:lang="ko">Slider</title>
             <var name="slider_count" type="select">
                 <title xml:lang="ko">슬라이더 갯수</title>
+                <options value="1">
+                    <title xml:lang="ko">1개</title>
+                </options>
                 <options value="2">
                     <title xml:lang="ko">2개</title>
                 </options>
@@ -497,6 +509,15 @@
         </group>
         <group>
             <title xml:lang="ko">Section 1 Sub1</title>
+            <var name="use_section1_sub1" type="select">
+                <title xml:lang="ko">서브 1 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">미사용</title>
+                </options>
+            </var>
             <var name="section1_top_title" type="text">
                 <title xml:lang="ko">메뉴 제목</title>
                 <description xml:lang="ko">Navbar에 노출되는 제목을 입력합니다.</description>
@@ -539,6 +560,15 @@
         </group>
         <group>
             <title xml:lang="ko">Section 1 Sub 2</title>
+            <var name="use_section1_sub2" type="select">
+                <title xml:lang="ko">서브 2 사용 여부</title>
+                <options value="Y">
+                    <title xml:lang="ko">사용</title>
+                </options>
+                <options value="N">
+                    <title xml:lang="ko">미사용</title>
+                </options>
+            </var>
             <var name="section1_sub2_title" type="text">
                 <title xml:lang="ko">서브 2 제목</title>
                 <description xml:lang="ko">서브 2 제목을 입력합니다.</description>

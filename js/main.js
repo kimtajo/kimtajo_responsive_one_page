@@ -19,7 +19,7 @@
 	// Carousel Feature Slide
 	var owlCrouselFeatureSlide = function() {
 		
-		var owl = $('.owl-carousel');
+		var owl = $('#owl_carousel');
 
 		owl.on('initialized.owl.carousel change.owl.carousel',function(elem){
 			var current = elem.item.index;
