@@ -52,7 +52,7 @@ p {
   background: #f9f6f0;
 }
 
-#fh5co-header {
+.fh5co-header {
   position: absolute;
   z-index: 99;
   width: 100%;
@@ -61,7 +61,7 @@ p {
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-header {
+  .fh5co-header {
     margin-top: 0;
     background: #fff;
     -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -69,47 +69,47 @@ p {
     -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
-  #fh5co-header .navbar-brand {
+  .fh5co-header .navbar-brand {
     color: #2185d5 !important;
   }
-  #fh5co-header #navbar li a {
+  .fh5co-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
   }
-  #fh5co-header #navbar li a:hover {
+  .fh5co-header #navbar li a:hover {
     color: #2185d5 !important;
   }
-  #fh5co-header #navbar li a span:before {
+  .fh5co-header #navbar li a span:before {
     background: transparent !important;
   }
-  #fh5co-header #navbar li.active a {
+  .fh5co-header #navbar li.active a {
     background: transparent;
     background: none;
     color: #2185d5 !important;
   }
-  #fh5co-header #navbar li.active a span:before {
+  .fh5co-header #navbar li.active a span:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
 }
-#fh5co-header .navbar {
+.fh5co-header .navbar {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-#fh5co-header #navbar li a {
+.fh5co-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
 }
-#fh5co-header #navbar li a span {
+.fh5co-header #navbar li a span {
   position: relative;
   display: block;
   padding-bottom: 5px;
 }
-#fh5co-header #navbar li a span:before {
+.fh5co-header #navbar li a span:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -129,10 +129,10 @@ p {
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-#fh5co-header #navbar li a:hover {
+.fh5co-header #navbar li a:hover {
   color: #fff;
 }
-#fh5co-header #navbar li a:hover span:before {
+.fh5co-header #navbar li a:hover span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
@@ -140,17 +140,17 @@ p {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
-#fh5co-header #navbar li.active a {
+.fh5co-header #navbar li.active a {
   background: transparent;
   background: none;
   color: #fff;
 }
-#fh5co-header #navbar li.active a span:before {
+.fh5co-header #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-#fh5co-header .navbar-brand {
+.fh5co-header .navbar-brand {
   float: left;
   display: block;
   font-size: 30px;
@@ -158,7 +158,7 @@ p {
   padding-left: 0;
   color: #fff;
 }
-#fh5co-header.navbar-fixed-top {
+.fh5co-header.navbar-fixed-top {
   position: fixed !important;
   background: #fff;
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -168,29 +168,29 @@ p {
   margin-top: 0px;
   top: 0;
 }
-#fh5co-header.navbar-fixed-top .navbar-brand {
+.fh5co-header.navbar-fixed-top .navbar-brand {
   color: #2185d5;
 }
-#fh5co-header.navbar-fixed-top #navbar li a {
+.fh5co-header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#fh5co-header.navbar-fixed-top #navbar li a:hover {
+.fh5co-header.navbar-fixed-top #navbar li a:hover {
   color: #2185d5;
 }
-#fh5co-header.navbar-fixed-top #navbar li.active a {
+.fh5co-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
   color: #2185d5;
 }
-#fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+.fh5co-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-#fh5co-header .navbar-default {
+.fh5co-header .navbar-default {
   border: transparent;
   background: transparent;
   -webkit-border-radius: 0px;
@@ -199,23 +199,23 @@ p {
   border-radius: 0px;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-header .navbar-default {
+  .fh5co-header .navbar-default {
     margin-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
   }
 }
-#fh5co-header .navbar-default .brand-slogan {
+.fh5co-header .navbar-default .brand-slogan {
   margin: 28px 0 0 15px;
   float: left;
   letter-spacing: 2px;
   color: #adadad;
 }
-#fh5co-header .navbar-default .brand-slogan em {
+.fh5co-header .navbar-default .brand-slogan em {
   color: #2185d5;
   font-style: normal;
 }
-#fh5co-header a {
+.fh5co-header a {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
@@ -272,49 +272,49 @@ p {
   transition: 0.3s;
 }
 
-#fh5co-our-services,
-#fh5co-about-us,
-#fh5co-features,
-#fh5co-testimonials,
-#fh5co-pricing,
-#fh5co-press {
+.fh5co-our-services,
+.fh5co-about-us,
+.fh5co-features,
+.fh5co-testimonials,
+.fh5co-pricing,
+.fh5co-press {
   padding: 5em 0;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-our-services,
-  #fh5co-about-us,
-  #fh5co-features,
-  #fh5co-testimonials,
-  #fh5co-pricing,
-  #fh5co-press {
+  .fh5co-our-services,
+  .fh5co-about-us,
+  .fh5co-features,
+  .fh5co-testimonials,
+  .fh5co-pricing,
+  .fh5co-press {
     padding: 3em 0;
   }
 }
 
-#fh5co-testimonials {
+.fh5co-testimonials {
   background: #2185d5;
 }
-#fh5co-testimonials .section-heading h2 {
+.fh5co-testimonials .section-heading h2 {
   color: white;
 }
-#fh5co-testimonials .section-heading h2:after {
+.fh5co-testimonials .section-heading h2:after {
   background: rgba(255, 255, 255, 0.2);
 }
-#fh5co-testimonials .section-heading .subtext h3 {
+.fh5co-testimonials .section-heading .subtext h3 {
   color: rgba(255, 255, 255, 0.5);
 }
-#fh5co-testimonials .box-testimony {
+.fh5co-testimonials .box-testimony {
   margin-bottom: 2em;
   float: left;
 }
-#fh5co-testimonials .box-testimony a {
+.fh5co-testimonials .box-testimony a {
   color: rgba(255, 255, 255, 0.5);
 }
-#fh5co-testimonials .box-testimony a:hover, #fh5co-testimonials .box-testimony a:focus, #fh5co-testimonials .box-testimony a:active {
+.fh5co-testimonials .box-testimony a:hover, .fh5co-testimonials .box-testimony a:focus, .fh5co-testimonials .box-testimony a:active {
   color: white;
   text-decoration: none;
 }
-#fh5co-testimonials .box-testimony blockquote {
+.fh5co-testimonials .box-testimony blockquote {
   padding-left: 0;
   border-left: none;
   padding: 40px;
@@ -325,7 +325,7 @@ p {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-#fh5co-testimonials .box-testimony blockquote:after {
+.fh5co-testimonials .box-testimony blockquote:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -335,7 +335,7 @@ p {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
 }
-#fh5co-testimonials .box-testimony blockquote .quote {
+.fh5co-testimonials .box-testimony blockquote .quote {
   position: absolute;
   top: 0;
   left: 10px;
@@ -353,26 +353,26 @@ p {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#fh5co-testimonials .box-testimony blockquote .quote > span {
+.fh5co-testimonials .box-testimony blockquote .quote > span {
   display: table-cell;
   vertical-align: middle;
 }
-#fh5co-testimonials .box-testimony blockquote p {
+.fh5co-testimonials .box-testimony blockquote p {
   font-style: italic;
 }
-#fh5co-testimonials .box-testimony .author {
+.fh5co-testimonials .box-testimony .author {
   line-height: 20px;
   color: white;
   font-size: 20px;
   margin-left: 20px;
 }
-#fh5co-testimonials .box-testimony .author .subtext {
+.fh5co-testimonials .box-testimony .author .subtext {
   display: block;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
 }
 
-#fh5co-pricing .price-box {
+.fh5co-pricing .price-box {
   border: 2px solid #ECEEF0;
   text-align: center;
   padding: 30px;
@@ -383,10 +383,10 @@ p {
   margin-bottom: 40px;
   position: relative;
 }
-#fh5co-pricing .price-box.popular {
+.fh5co-pricing .price-box.popular {
   border: 2px solid #2185d5;
 }
-#fh5co-pricing .price-box.popular .popular-text {
+.fh5co-pricing .price-box.popular .popular-text {
   top: 0;
   left: 50%;
   /*margin-left: -54px;*/
@@ -400,7 +400,7 @@ p {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-#fh5co-pricing .price-box.popular .popular-text:after {
+.fh5co-pricing .price-box.popular .popular-text:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -411,7 +411,7 @@ p {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
-#fh5co-pricing .pricing-plan {
+.fh5co-pricing .pricing-plan {
   margin: 0;
   padding: 0;
   font-size: 15px;
@@ -419,34 +419,34 @@ p {
   text-transform: uppercase;
   font-weight: 700;
 }
-#fh5co-pricing .price {
+.fh5co-pricing .price {
   font-size: 50px;
   color: #000;
 }
-#fh5co-pricing .price .currency {
+.fh5co-pricing .price .currency {
   font-size: 20px;
   top: -1.2em;
 }
-#fh5co-pricing .price small {
+.fh5co-pricing .price small {
   font-size: 16px;
 }
-#fh5co-pricing .pricing-info {
+.fh5co-pricing .pricing-info {
   padding: 0;
   margin: 0 0 30px 0;
 }
-#fh5co-pricing .pricing-info li {
+.fh5co-pricing .pricing-info li {
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: center;
 }
 
-#fh5co-our-services,
-#fh5co-press {
+.fh5co-our-services,
+.fh5co-press {
   background: #f4f4f4;
 }
 
-#fh5co-our-services .box {
+.fh5co-our-services .box {
   padding: 30px;
   background: #fff;
   text-align: center;
@@ -455,12 +455,12 @@ p {
   position: relative;
 }
 @media screen and (max-width: 992px) {
-  #fh5co-our-services .box {
+  .fh5co-our-services .box {
     min-height: inherit;
     margin-bottom: 60px;
   }
 }
-#fh5co-our-services .box .icon {
+.fh5co-our-services .box .icon {
   width: 85px;
   height: 85px;
   margin: 0 auto;
@@ -475,35 +475,35 @@ p {
   display: table;
   text-align: center;
 }
-#fh5co-our-services .box .icon > span {
+.fh5co-our-services .box .icon > span {
   display: table-cell;
   vertical-align: middle;
 }
-#fh5co-our-services .box .icon > span i {
+.fh5co-our-services .box .icon > span i {
   font-size: 40px;
   color: #fff !important;
   margin: 0;
   padding: 0;
 }
-#fh5co-our-services .box .icon.colored-1 {
+.fh5co-our-services .box .icon.colored-1 {
   background: #2aaf67;
 }
-#fh5co-our-services .box .icon.colored-2 {
+.fh5co-our-services .box .icon.colored-2 {
   background: #00bff3;
 }
-#fh5co-our-services .box .icon.colored-3 {
+.fh5co-our-services .box .icon.colored-3 {
   background: #f26522;
 }
-#fh5co-our-services .box .icon.colored-4 {
+.fh5co-our-services .box .icon.colored-4 {
   background: #e52b50;
 }
-#fh5co-our-services .box .icon.colored-5 {
+.fh5co-our-services .box .icon.colored-5 {
   background: #2fc5cc;
 }
-#fh5co-our-services .box .icon.colored-6 {
+.fh5co-our-services .box .icon.colored-6 {
   background: #6173f4;
 }
-#fh5co-our-services .box .step-number {
+.fh5co-our-services .box .step-number {
   font-size: 16px;
   display: block;
   color: #d1d1d1;
@@ -512,7 +512,7 @@ p {
   font-weight: 700;
   margin-bottom: 10px;
 }
-#fh5co-our-services .box h3 {
+.fh5co-our-services .box h3 {
   margin: 0 0 20px 0;
   padding: 0;
   font-weight: 400;
@@ -520,36 +520,36 @@ p {
   color: #444;
 }
 
-#fh5co-features {
+.fh5co-features {
   padding: 7em 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-features {
+  .fh5co-features {
     padding: 4em 0;
   }
 }
-#fh5co-features .fh5co-service {
+.fh5co-features .fh5co-service {
   margin-bottom: 30px;
   float: left;
 }
-#fh5co-features .fh5co-service .fh5co-icon {
+.fh5co-features .fh5co-service .fh5co-icon {
   float: left;
   width: 20%;
 }
-#fh5co-features .fh5co-service .fh5co-icon i {
+.fh5co-features .fh5co-service .fh5co-icon i {
   font-size: 40px;
   color: #2185d5;
 }
-#fh5co-features .fh5co-service .fh5co-desc {
+.fh5co-features .fh5co-service .fh5co-desc {
   width: 80%;
   float: right;
 }
-#fh5co-features .fh5co-service .fh5co-desc h3 {
+.fh5co-features .fh5co-service .fh5co-desc h3 {
   margin-top: 0;
   font-size: 18px;
 }
 
-#fh5co-press .fh5co-press-item {
+.fh5co-press .fh5co-press-item {
   background: #fff;
   float: left;
   margin-bottom: 30px;
@@ -566,28 +566,28 @@ p {
   border-radius: 4px;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-press .fh5co-press-item {
+  .fh5co-press .fh5co-press-item {
     display: block !important;
   }
 }
-#fh5co-press .fh5co-press-item .fh5co-press-text,
-#fh5co-press .fh5co-press-item .fh5co-press-img {
+.fh5co-press .fh5co-press-item .fh5co-press-text,
+.fh5co-press .fh5co-press-item .fh5co-press-img {
   width: 50%;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-press .fh5co-press-item .fh5co-press-text,
-  #fh5co-press .fh5co-press-item .fh5co-press-img {
+  .fh5co-press .fh5co-press-item .fh5co-press-text,
+  .fh5co-press .fh5co-press-item .fh5co-press-img {
     height: inherit;
     float: none !important;
     width: 100%;
     display: block !important;
   }
 }
-#fh5co-press .fh5co-press-item .fh5co-press-text {
+.fh5co-press .fh5co-press-item .fh5co-press-text {
   float: left;
   padding: 20px;
 }
-#fh5co-press .fh5co-press-item .fh5co-press-text .fh5co-press-title {
+.fh5co-press .fh5co-press-item .fh5co-press-text .fh5co-press-title {
   margin: 0 0 20px 0;
   padding: 0 0 10px 0;
   font-weight: 400;
@@ -595,7 +595,7 @@ p {
   color: #444;
   position: relative;
 }
-#fh5co-press .fh5co-press-item .fh5co-press-text .fh5co-press-title .fh5co-border {
+.fh5co-press .fh5co-press-item .fh5co-press-text .fh5co-press-title .fh5co-border {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -603,7 +603,7 @@ p {
   width: 30px;
   background: #2185d5;
 }
-#fh5co-press .fh5co-press-item .fh5co-press-img {
+.fh5co-press .fh5co-press-item .fh5co-press-img {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -611,7 +611,7 @@ p {
   background-size: cover;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-press .fh5co-press-item .fh5co-press-img {
+  .fh5co-press .fh5co-press-item .fh5co-press-img {
     height: 200px;
     left: 0;
     top: 0;
@@ -1123,12 +1123,12 @@ p {
 
 
 /* added by kimtajo  */
-#fh5co-header #navbar ul > li.open > a{
+.fh5co-header #navbar ul > li.open > a{
   background-color: #2185d5;
   color: #eee;
 }
 
-#fh5co-header #navbar ul > li.open > ul.dropdown-menu > li > a{
+.fh5co-header #navbar ul > li.open > ul.dropdown-menu > li > a{
   color: #7f7f7f;
 }
 /* /.added by kimtajo */

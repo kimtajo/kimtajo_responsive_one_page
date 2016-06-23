@@ -156,7 +156,7 @@
 
 		$(window).scroll(function(event){
 
-		   	var header = $('#fh5co-header'),
+		   	var header = $('.fh5co-header'),
 				scrlTop = $(this).scrollTop(),
 				transparent_logo_image = $('#transparent_logo_image'),
 				logo_image = $('#logo_image');
@@ -265,8 +265,8 @@
 	// Services
 	var servicesAnimate = function() {
 
-		if ( $('#fh5co-our-services').length > 0 ) {	
-			$('#fh5co-our-services .to-animate').each(function( k ) {
+		if ( $('.fh5co-our-services').length > 0 ) {	
+			$('.fh5co-our-services .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -280,8 +280,8 @@
 	};
 	var servicesWayPoint = function() {
 
-		if ( $('#fh5co-our-services').length > 0 ) {
-			$('#fh5co-our-services').waypoint( function( direction ) {
+		if ( $('.fh5co-our-services').length > 0 ) {
+			$('.fh5co-our-services').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
 
@@ -301,8 +301,8 @@
 	// Features
 	var featuresAnimate = function() {
 
-		if ( $('#fh5co-features').length > 0 ) {	
-			$('#fh5co-features .to-animate').each(function( k ) {
+		if ( $('.fh5co-features').length > 0 ) {	
+			$('.fh5co-features .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -316,8 +316,8 @@
 	};
 	var featuresWayPoint = function() {
 
-		if ( $('#fh5co-features').length > 0 ) {
-			$('#fh5co-features').waypoint( function( direction ) {
+		if ( $('.fh5co-features').length > 0 ) {
+			$('.fh5co-features').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
 
@@ -346,8 +346,8 @@
 	// testimonials
 	var testimonialsAnimate = function() {
 
-		if ( $('#fh5co-testimonials').length > 0 ) {	
-			$('#fh5co-testimonials .to-animate').each(function( k ) {
+		if ( $('.fh5co-testimonials').length > 0 ) {	
+			$('.fh5co-testimonials .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -361,8 +361,8 @@
 	};
 	var testimonialsWayPoint = function() {
 
-		if ( $('#fh5co-testimonials').length > 0 ) {
-			$('#fh5co-testimonials').waypoint( function( direction ) {
+		if ( $('.fh5co-testimonials').length > 0 ) {
+			$('.fh5co-testimonials').waypoint( function( direction ) {
 										
 				
 					setTimeout(testimonialsAnimate, 200);
@@ -379,8 +379,8 @@
 	// Pricing
 	var pricingAnimate = function() {
 
-		if ( $('#fh5co-pricing').length > 0 ) {	
-			$('#fh5co-pricing .to-animate').each(function( k ) {
+		if ( $('.fh5co-pricing').length > 0 ) {	
+			$('.fh5co-pricing .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -394,8 +394,8 @@
 	};
 	var pricingWayPoint = function() {
 
-		if ( $('#fh5co-pricing').length > 0 ) {
-			$('#fh5co-pricing').waypoint( function( direction ) {
+		if ( $('.fh5co-pricing').length > 0 ) {
+			$('.fh5co-pricing').waypoint( function( direction ) {
 										
 					setTimeout(function(){
 						$('.animate-pricing-1').addClass('animated fadeIn');
@@ -417,8 +417,8 @@
 	// Pricing
 	var pressAnimate = function() {
 
-		if ( $('#fh5co-work').length > 0 ) {
-			$('#fh5co-work .to-animate').each(function( k ) {
+		if ( $('.fh5co-work').length > 0 ) {
+			$('.fh5co-work .to-animate').each(function( k ) {
 
 				var el = $(this);
 
@@ -433,8 +433,8 @@
 
 	var pressWayPoint = function() {
 
-		if ( $('#fh5co-work').length > 0 ) {
-			$('#fh5co-work').waypoint( function( direction ) {
+		if ( $('.fh5co-work').length > 0 ) {
+			$('.fh5co-work').waypoint( function( direction ) {
 
 					setTimeout(function(){
 						$('.animate-press-1').addClass('animated fadeIn');

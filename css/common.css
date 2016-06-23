@@ -1,5 +1,5 @@
 body,h1, h2, h3, h4, h5, h6,
-#fh5co-header #navbar li a
+.fh5co-header #navbar li a
 
 {
     font-family:Raleway,'나눔바른고딕',NanumBarunGothic,ng,'맑은 고딕','Malgun Gothic','돋움',Dotum,'애플 SD 산돌고딕 Neo','Apple SD Gothic Neo',AppleGothic,Helvetica,sans-serif;
@@ -38,7 +38,7 @@ button.fh5co-btn{
     height: auto !important;
 }
 
-#fh5co-header .navbar-brand-img > img {
+.fh5co-header .navbar-brand-img > img {
     height: 44px;
     margin-top:12px;
 }
@@ -53,14 +53,14 @@ button.fh5co-btn{
     }
 }
 
-#fh5co-pricing .price{
+.fh5co-pricing .price{
     font-size: 40px;
 }
 
-#fh5co-pricing .price .currency{
+.fh5co-pricing .price .currency{
     font-size: 17px;
 }
-#fh5co-testimonials .box-testimony{
+.fh5co-testimonials .box-testimony{
     margin-left: 1.1em;
 }
 
@@ -72,6 +72,6 @@ button.fh5co-btn{
     background-size: cover !important;
 }
 
-#fh5co-pricing .price-box{
+.fh5co-pricing .price-box{
     font-size: 13px;
 }
