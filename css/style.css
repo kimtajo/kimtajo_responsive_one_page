@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -12,15 +13,13 @@
 *
 * ======================================================= */
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #777777;
-  color: #7f7f7f;
-  background: #fff;
-  height: 100%;
-  position: relative;
+	font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #777777;
+    background: #fff;
+    height: 100%;
+    position: relative;
 }
 
 a {
@@ -37,13 +36,11 @@ a:hover, a:active, a:focus {
 p {
   margin-bottom: 1.5em;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #000;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 400;
+div{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 ::-webkit-selection {
   color: #818892;
   background: #f9f6f0;
@@ -247,6 +244,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .section-heading {
@@ -294,13 +294,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.btn {
+.fh5co-btn {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   text-shadow: 0 0px 0px rgba(255,255,255,.75);
   box-shadow:  0 0px 0px rgba(255,255,255,.2),0 0px 0px rgba(0,0,0,.05);
   height: auto !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
@@ -863,29 +866,29 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0;
 }
 
-.btn {
+.fh5co-btn {
   text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.btn.btn-primary {
+.fh5co-btn.fh5co-btn-primary {
   background: #6173f4;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
 }
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+.fh5co-btn.fh5co-btn-primary:hover, .fh5co-btn.fh5co-btn-primary:active, .fh5co-btn.fh5co-btn-primary:focus {
   box-shadow: none;
   background: #6173f4;
 }
-.btn:hover, .btn:active, .btn:focus {
+.fh5co-btn:hover, .fh5co-btn:active, .fh5co-btn:focus {
   background: #393e46 !important;
   color: #fff;
   outline: none !important;
 }
-.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+.fh5co-btn.fh5co-btn-default:hover, .fh5co-btn.fh5co-btn-default:focus, .fh5co-btn.fh5co-btn-default:active {
   border-color: transparent;
 }
 
@@ -954,7 +957,7 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel:focus .owl-controls .owl-nav, .owl-carousel:hover .owl-controls .owl-nav, .owl-carousel:active .owl-controls .owl-nav {
   opacity: 1;
 }
-.owl-carousel .btn-primary:hover, .owl-carousel .btn-primary:focus, .owl-carousel .btn-primary:active {
+.owl-carousel .fh5co-btn-primary:hover, .owl-carousel .fh5co-btn-primary:focus, .owl-carousel .fh5co-btn-primary:active {
   background: transparent !important;
   border: 2px solid #fff !important;
 }

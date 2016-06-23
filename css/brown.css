@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -7,17 +8,15 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
   line-height: 1.8;
   color: #777777;
-  color: #7f7f7f;
   background: #fff;
   height: 100%;
   position: relative;
@@ -36,12 +35,6 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 1.5em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #000;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 400;
 }
 
 ::-webkit-selection {
